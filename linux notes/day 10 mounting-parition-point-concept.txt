@@ -1,0 +1,74 @@
+========================================
+
+DISK
+
+Partition 
+
+File System Type
+
+Mount Point
+
+data writting
+
+=======================================
+Disk Name
+
+1- PATA Disk OR IDE Disk     ===>   /dev/hda    /dev/hdb   /dev/hdc  ==> /dev/hda1 /dev/hda2..so on
+2- SATA DISK OR ssd disk     ===>   /dev/sda   /dev/sdb   /dev/sdc   ==> /dev/sda1  /dev/sda2 /dev/sdb1
+3- Virtual Disk              ===>   /dev/vda   /dev/vdb  ...so on 
+
+=======================================
+In Windows  ==> Format  or File system Create ==>  FAT and NTFS
+In Linux    ==> Format  or File System Create ==>  EXT2 EXT3 EXT4 and XFS 
+=======================================
+
+# fdisk -l 
+
+/dev/sda
+
+/dev/sda1
+/dev/sda2
+
+Double Click   ==> Data access 
+
+======================================
+
+partition  ==> format   ==> directory   ==> mount or access point create
+
+======================================
+
+
+
+/dev/sda1   ==> 15 GB    ==>   /      <=== 19 Directory
+/dev/sda2   ==>  1 GB    ==>   /boot
+/dev/sda3   ==>  5 GB    ==>   /data  
+
+======================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

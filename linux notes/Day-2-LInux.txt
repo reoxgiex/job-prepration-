@@ -1,0 +1,284 @@
+===============================
+Day-2  Session 
+===============================
+How we can create My personal Lab for practise ?
+            OR
+How we can install RHEL-8 Step by Step ?
+===============================
+Machine <====  Operating System <===    Application + Software + Tools
+===============================
+Operating system ==> Linux based Flavor ==> RedHat ==> RHEL-8
+===============================
+
+machine without OS
+machine with OS  => machine + rhel-8 
+
+Server
+
+Client
+
+
+Machine / Workstation  
+
+===============================
+Redhat OS Installation ?
+
+
+Login Mode ?
+
+1- CLI Mode
+2- GUI Mode
+
+===============================
+Student ==> Training  ==> GUI + CLI mode
+===============================
+Production users  ==> 90%  ==> CLI mode only
+===============================
+Windows  ==> Application or Software  ==>  setup file OR  .exe file
+Redhat   ==> OS  ==> Machine ==> Install ==> RPMs
+===============================
+Redhat  ==> Webiste  ==> ISO image ==> Download ==> Install
+===============================
+RPM install ?
+
+
+
+
+1- During the OS Installation  ==> number of RPMS As per define group ==> Install  ==> number of commands 
+2- After the OS installation   ==> Choice-1  ISO ==> Copy  ==> Folder ==> As per need ==> installation
+                                   Choice-2  We can connect my machine directly with redhat subscrition 
+                                   Choice-3  Third party Application ==> respective ==> website 
+                                   Choice-4  Inhouse Application or RPMS developed by inhouse developers
+
+
+==============================
+www.redhat.com  ==> rhel-8 iso  ==> Folders  ==> RPMS   + Extra RPMS [ Redhat web site + Third Party website ]
+==============================
+Example
+RHEL-8 ISO or Bootable Image  ==> OS installation 
+
+DVD or ISO image or Bootable image   ==> 6500  RPMs  by default Available
+
+During the Installation ==> Options
+
+
+1- Minimal installation    ==> Only CLI Mode   ==> 550 RPMs
+2- Server with GUI         ==> GUI + CLI Mode  ==> around 1300 RPMS
+
+============================
+Useradd    ==> RPM
+Userdel    ==> RPM
+FTP Server ==> RPM
+============================
+Types of Access Method  ?
+
+1- Local to Local 
+2- Remote login 
+
+============================
+
+Types of Login Users ?
+
+1- Super user         ==>   root                ==>   #    ==>  100 % 
+
+2- Normal User        ==>   deepak rahul sumit  ==>   $    ==>  Limited Rights  ==> Increase OR decrease
+
+===========================
+SUDO User
+===========================
+Machine  <=== RAM + CPU + DISK  <== Bootable Image Connect <=== OS install 
+===========================
+Choice  ?
+
+1- Physical Machine
+2- Dual Booting Concept
+=========================== 
+3- Virtual Machine 
+===========================
+4- cloud based infra or portal  ==> AWS Cloud,  Azure Cloud , Google cloud and others
+===========================
+
+Installation Resouces ?
+
+1- CD-rom 
+2- DVD 
+3- Pendrive
+4- Direct ISO but if you are using the Virtual machine concept
+5- Network based instalation Server OR PXE Boot Server OR KickStart Server
+
+==================================
+
+Note:-
+
+1- Virtual Box OR VMware workstation
+2- OS ==> Installation Image 
+
+===================================
+
+Google Drive  ==> Download
+
+===================================
+Linux Flavor  ==> website  ==> There is not signup Account
+===================================
+www.redhat.com   ==> account sign up  ==> RHN account
+    OR
+Google Drive
+
+===================================
+
+Note:- we have Vmware workstation software and RHEL-8 ISO image before the installation 
+
+Step-1  Install VMware work station or virtual Box 
+Step-2  Now click on Vmware workstation icons ==> and create your VM as per demands
+Step-3  Connect Your RHEL-8 ISO image to start your OS installation and Power on your machine
+Step-4  Select First Option ==> Install rhel 8.0
+
+===================================
+
+RHEL-8 Installation - Mode
+
+1- Using GUI based  method
+2- Using Fully CLI based method 
+
+
+===================================
+CLI based ==> Installation 
+
+Press ESC key 
+
+boot: linux text
+
+==================================
+CentOS Linux 
+Fedora Linux
+Ubuntu
+Suse
+kali
+==================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

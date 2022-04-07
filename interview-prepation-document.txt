@@ -1,0 +1,30 @@
+1 - Git account Administrator : Managing the comapny git acoount for all user (Developer ,Tester etc.) and alowing
+    him for any project or any module. Crating new user when someone is joing company and deletion of the user during
+    His contract end with company.
+
+    Giving support to new developer when someone joing in team and dont know the procedue and all related to code push &
+    Pull from centrol/remote repository or merging the code , cerating the new barnch by CLI , Tagging of code etc. 
+
+2- Jenkins account Administartor for all projects : Managing the all user database in jenkins and hadling day to day
+   Automation related task from multiple projects. User creation and deletion for any user is managing by me with the
+   Help of Role and base.
+
+3- Making and manintaning CI/CD Job for developer code for new projects. By CD we are making build and then string the binaries
+   In jenskins server and then making CD for our local QA environment for code testing etc. We are using ansible here for code
+   Deployement from one machine to other machine or source to destination.
+
+4- I am resposible to make and configure jenkins server , Git server and ansible server in the time of new project starting.
+
+5- Here we have one project where we are using docker and kubernetes for deplyement. We are using amazone s3 bucket where we are
+   Store imgaes of microservices etc. We are using ECR concept here and managing day to day activity.
+
+   We are using docker to cerate new invironment as per requirement. Also we have 4 kubernates cluseter for 2 projects. one for dev
+   and second one for qa.
+
+6- Some time when there is no task reated to do automation on devops releated work i am helping opeation team and coordinating with
+   developer team for fully automation and all.
+
+7- In daily or weekly basis i have to deploy the release for the client. In few projects this is fully automated bu for few projects
+   Where security is more than work we are coping the binaries to customer testbed and then deployung the same to pre prod and production
+   Environment. We are using configmap in qubernaties for some updates etc.
+ 

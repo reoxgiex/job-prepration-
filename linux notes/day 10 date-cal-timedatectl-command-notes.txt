@@ -1,0 +1,75 @@
+[root@localhost ~]# history 
+    1  date 
+    2  cal  
+    3  date ; cal
+    4  cal 2021
+    5  cal 6 2021
+    6  cal -3  6 2021
+    7* cal -3  6 2021
+    8  date 
+    9  date +%H
+   10  date +%M
+   11  date +%H:%M
+   12  date +%H:%M:%S
+   13  date +%Y
+   14  date +%y
+   15  date +%D
+   16  date +%d
+   17  date
+   18  date +%A
+   19  date +%r
+   20  date +%H
+   21  date +%M
+   22  date +%m
+   23  date +%B
+   24  date +%Z
+   25  date  --help 
+   26  date +%B
+   27  x=5
+   28  echo $x
+   29  echo  date
+   30  echo  $(date)
+   31  echo  $(date +%A)
+   32  echo  $(date +%H:%M)
+   33  echo  "Today is = $(date +%A)"
+   34  echo  "Current time  is = $(date +%H:%M)"
+   35  mkdir sqldata-$(date +%H:%M:%d:%Y)
+   36  ls  
+   37  date  
+   38  date  +%H
+   39  date 
+   40  date  
+   41  date  mmddhhmmyy
+   42  date  102411302021
+   43  date  102411302021.20
+   44  date  
+   45  date   -s  "Sun Oct 24 10:35:06 IST 2022"
+   46  date 
+   47  date  -s  "Mon Oct 24 10:35:08 IST 2021"
+   48  cal 10 2021
+   49  cal 24 10 2021
+   50  date  -s  "Mon Oct 24 10:35:08 IST 2021"
+   51  date 
+   52  timedatectl 
+   53  timedatectl  list-timezones 
+   54  timedatectl  list-timezones  | grep -i dhaka
+   55  timedatectl set-timezone Asia/Dhaka
+   56  timedatectl 
+   57  timedatectl  list-timezones  | grep -i kol
+   58  timedatectl set-timezone Asia/Kolkata
+   59  timedatectl 
+   60  ifconfig 
+   61  vim /etc/sysconfig/network-scripts/ifcfg-ens160 
+   62  ifup ens160 
+   63  ifconfig 
+   64  ping google.com 
+   65  rpm -qa chrony
+   66  vim /etc/chrony.conf 
+   67  systemctl  restart chronyd
+   68  systemctl  enable   chronyd
+   69  ping google.com
+   70  date  
+   71  date
+   72  timedatectl 
+   73  chronyc  source
+   74  chronyc  sources

@@ -1,0 +1,1797 @@
+[root@localhost ~]# pwd
+/root
+[root@localhost ~]# ls
+anaconda-ks.cfg  Documents  initial-setup-ks.cfg  Pictures  Templates
+Desktop          Downloads  Music                 Public    Videos
+[root@localhost ~]# 
+[root@localhost ~]# ls ~
+anaconda-ks.cfg  Documents  initial-setup-ks.cfg  Pictures  Templates
+Desktop          Downloads  Music                 Public    Videos
+[root@localhost ~]# 
+[root@localhost ~]# ls /root 
+anaconda-ks.cfg  Documents  initial-setup-ks.cfg  Pictures  Templates
+Desktop          Downloads  Music                 Public    Videos
+[root@localhost ~]# 
+[root@localhost ~]# ls  /home 
+krishna  soniya
+[root@localhost ~]# 
+[root@localhost ~]# ls /
+bin   dev  home  lib64  mnt  proc  run   srv  tmp  var
+boot  etc  lib   media  opt  root  sbin  sys  usr
+[root@localhost ~]# 
+[root@localhost ~]# ls
+anaconda-ks.cfg  Documents  initial-setup-ks.cfg  Pictures  Templates
+Desktop          Downloads  Music                 Public    Videos
+[root@localhost ~]# 
+[root@localhost ~]# ls /root 
+anaconda-ks.cfg  Documents  initial-setup-ks.cfg  Pictures  Templates
+Desktop          Downloads  Music                 Public    Videos
+[root@localhost ~]# 
+[root@localhost ~]# ls ~
+anaconda-ks.cfg  Documents  initial-setup-ks.cfg  Pictures  Templates
+Desktop          Downloads  Music                 Public    Videos
+[root@localhost ~]#
+[root@localhost ~]# 
+[root@localhost ~]# pwd
+/root
+[root@localhost ~]# 
+[root@localhost ~]# touch abc  
+[root@localhost ~]# 
+[root@localhost ~]# touch  /xyz 
+[root@localhost ~]# 
+[root@localhost ~]# ls  
+abc              Desktop    Downloads             Music     Public     Videos
+anaconda-ks.cfg  Documents  initial-setup-ks.cfg  Pictures  Templates
+[root@localhost ~]# 
+[root@localhost ~]# ls  /
+bin   dev  home  lib64  mnt  proc  run   srv  tmp  var
+boot  etc  lib   media  opt  root  sbin  sys  usr  xyz
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch   amit   /amit    /tmp/amit
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc   anaconda-ks.cfg  Documents  initial-setup-ks.cfg  Pictures  Templates
+amit  Desktop          Downloads  Music                 Public    Videos
+[root@localhost ~]# 
+[root@localhost ~]# ls  /
+amit  boot  etc   lib    media  opt   root  sbin  sys  usr  xyz
+bin   dev   home  lib64  mnt    proc  run   srv   tmp  var
+[root@localhost ~]# 
+[root@localhost ~]# ls /tmp 
+amit
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-bolt.service-E888tg
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-colord.service-yaKjNq
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-fwupd.service-KVtT9w
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-geoclue.service-GipPBN
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-ModemManager.service-CcOqKI
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-rtkit-daemon.service-8zPcLm
+tracker-extract-files.0
+tracker-extract-files.1000
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch  /rajeev    rajeev 
+[root@localhost ~]# 
+[root@localhost ~]# ls 
+abc   anaconda-ks.cfg  Documents  initial-setup-ks.cfg  Pictures  rajeev     Videos
+amit  Desktop          Downloads  Music                 Public    Templates
+[root@localhost ~]# 
+[root@localhost ~]# ls /
+amit  boot  etc   lib    media  opt   rajeev  run   srv  tmp  var
+bin   dev   home  lib64  mnt    proc  root    sbin  sys  usr  xyz
+[root@localhost ~]# 
+
+
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch  abc1 abc2 abc3
+[root@localhost ~]# ls
+abc   abc3             Desktop    initial-setup-ks.cfg  Public     Videos
+abc1  amit             Documents  Music                 rajeev
+abc2  anaconda-ks.cfg  Downloads  Pictures              Templates
+[root@localhost ~]# 
+[root@localhost ~]# touch  ibm{1,2,3}
+[root@localhost ~]# ls
+abc   abc3             Desktop    ibm1  initial-setup-ks.cfg  Public     Videos
+abc1  amit             Documents  ibm2  Music                 rajeev
+abc2  anaconda-ks.cfg  Downloads  ibm3  Pictures              Templates
+[root@localhost ~]# 
+[root@localhost ~]# touch  tcs{1..5}
+[root@localhost ~]# 
+[root@localhost ~]# ls 
+abc   amit             Downloads  initial-setup-ks.cfg  rajeev  tcs4
+abc1  anaconda-ks.cfg  ibm1       Music                 tcs1    tcs5
+abc2  Desktop          ibm2       Pictures              tcs2    Templates
+abc3  Documents        ibm3       Public                tcs3    Videos
+[root@localhost ~]# 
+[root@localhost ~]# touch sumit.txt 
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc   anaconda-ks.cfg  ibm2                  Public     tcs3
+abc1  Desktop          ibm3                  rajeev     tcs4
+abc2  Documents        initial-setup-ks.cfg  sumit.txt  tcs5
+abc3  Downloads        Music                 tcs1       Templates
+amit  ibm1             Pictures              tcs2       Videos
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch  sumit{1..3}.txt
+[root@localhost ~]# 
+[root@localhost ~]# ls 
+abc   anaconda-ks.cfg  ibm2                  Public      sumit.txt  tcs5
+abc1  Desktop          ibm3                  rajeev      tcs1       Templates
+abc2  Documents        initial-setup-ks.cfg  sumit1.txt  tcs2       Videos
+abc3  Downloads        Music                 sumit2.txt  tcs3
+amit  ibm1             Pictures              sumit3.txt  tcs4
+[root@localhost ~]# 
+
+
+===========================
+
+[root@localhost ~]# 
+[root@localhost ~]# pwd
+/root
+[root@localhost ~]# 
+[root@localhost ~]# touch abc  
+[root@localhost ~]# 
+[root@localhost ~]# touch  /xyz 
+[root@localhost ~]# 
+[root@localhost ~]# ls  
+abc              Desktop    Downloads             Music     Public     Videos
+anaconda-ks.cfg  Documents  initial-setup-ks.cfg  Pictures  Templates
+[root@localhost ~]# 
+[root@localhost ~]# ls  /
+bin   dev  home  lib64  mnt  proc  run   srv  tmp  var
+boot  etc  lib   media  opt  root  sbin  sys  usr  xyz
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch   amit   /amit    /tmp/amit
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc   anaconda-ks.cfg  Documents  initial-setup-ks.cfg  Pictures  Templates
+amit  Desktop          Downloads  Music                 Public    Videos
+[root@localhost ~]# 
+[root@localhost ~]# ls  /
+amit  boot  etc   lib    media  opt   root  sbin  sys  usr  xyz
+bin   dev   home  lib64  mnt    proc  run   srv   tmp  var
+[root@localhost ~]# 
+[root@localhost ~]# ls /tmp 
+amit
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-bolt.service-E888tg
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-colord.service-yaKjNq
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-fwupd.service-KVtT9w
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-geoclue.service-GipPBN
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-ModemManager.service-CcOqKI
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-rtkit-daemon.service-8zPcLm
+tracker-extract-files.0
+tracker-extract-files.1000
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch  /rajeev    rajeev 
+[root@localhost ~]# 
+[root@localhost ~]# ls 
+abc   anaconda-ks.cfg  Documents  initial-setup-ks.cfg  Pictures  rajeev     Videos
+amit  Desktop          Downloads  Music                 Public    Templates
+[root@localhost ~]# 
+[root@localhost ~]# ls /
+amit  boot  etc   lib    media  opt   rajeev  run   srv  tmp  var
+bin   dev   home  lib64  mnt    proc  root    sbin  sys  usr  xyz
+[root@localhost ~]# 
+
+
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch  abc1 abc2 abc3
+[root@localhost ~]# ls
+abc   abc3             Desktop    initial-setup-ks.cfg  Public     Videos
+abc1  amit             Documents  Music                 rajeev
+abc2  anaconda-ks.cfg  Downloads  Pictures              Templates
+[root@localhost ~]# 
+[root@localhost ~]# touch  ibm{1,2,3}
+[root@localhost ~]# ls
+abc   abc3             Desktop    ibm1  initial-setup-ks.cfg  Public     Videos
+abc1  amit             Documents  ibm2  Music                 rajeev
+abc2  anaconda-ks.cfg  Downloads  ibm3  Pictures              Templates
+[root@localhost ~]# 
+[root@localhost ~]# touch  tcs{1..5}
+[root@localhost ~]# 
+[root@localhost ~]# ls 
+abc   amit             Downloads  initial-setup-ks.cfg  rajeev  tcs4
+abc1  anaconda-ks.cfg  ibm1       Music                 tcs1    tcs5
+abc2  Desktop          ibm2       Pictures              tcs2    Templates
+abc3  Documents        ibm3       Public                tcs3    Videos
+[root@localhost ~]# 
+[root@localhost ~]# touch sumit.txt 
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc   anaconda-ks.cfg  ibm2                  Public     tcs3
+abc1  Desktop          ibm3                  rajeev     tcs4
+abc2  Documents        initial-setup-ks.cfg  sumit.txt  tcs5
+abc3  Downloads        Music                 tcs1       Templates
+amit  ibm1             Pictures              tcs2       Videos
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch  sumit{1..3}.txt
+[root@localhost ~]# 
+[root@localhost ~]# ls 
+abc   anaconda-ks.cfg  ibm2                  Public      sumit.txt  tcs5
+abc1  Desktop          ibm3                  rajeev      tcs1       Templates
+abc2  Documents        initial-setup-ks.cfg  sumit1.txt  tcs2       Videos
+abc3  Downloads        Music                 sumit2.txt  tcs3
+amit  ibm1             Pictures              sumit3.txt  tcs4
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch karan 
+[root@localhost ~]# 
+[root@localhost ~]# touch  /tmp/karan
+[root@localhost ~]# 
+[root@localhost ~]# touch  /karan
+[root@localhost ~]# 
+[root@localhost ~]# ls 
+abc   anaconda-ks.cfg  ibm2                  Pictures    sumit3.txt  tcs4
+abc1  Desktop          ibm3                  Public      sumit.txt   tcs5
+abc2  Documents        initial-setup-ks.cfg  rajeev      tcs1        Templates
+abc3  Downloads        karan                 sumit1.txt  tcs2        Videos
+amit  ibm1             Music                 sumit2.txt  tcs3
+[root@localhost ~]# 
+[root@localhost ~]# ls /
+amit  boot  etc   karan  lib64  mnt  proc    root  sbin  sys  usr  xyz
+bin   dev   home  lib    media  opt  rajeev  run   srv   tmp  var
+[root@localhost ~]# 
+[root@localhost ~]# ls  /tmp
+
+[root@localhost ~]# ls  /tmp
+amit
+karan
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-bolt.service-E888tg
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-colord.service-yaKjNq
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-fwupd.service-KVtT9w
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-geoclue.service-GipPBN
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-ModemManager.service-CcOqKI
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-rtkit-daemon.service-8zPcLm
+tracker-extract-files.0
+tracker-extract-files.1000
+[root@localhost ~]# 
+
+
+
+
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch rahul ramesh gopesh 
+[root@localhost ~]# ls
+abc   anaconda-ks.cfg  ibm1                  Music     ramesh      tcs1  Templates
+abc1  Desktop          ibm2                  Pictures  sumit1.txt  tcs2  Videos
+abc2  Documents        ibm3                  Public    sumit2.txt  tcs3
+abc3  Downloads        initial-setup-ks.cfg  rahul     sumit3.txt  tcs4
+amit  gopesh           karan                 rajeev    sumit.txt   tcs5
+[root@localhost ~]# 
+[root@localhost ~]# touch  /tmp/gopesh 
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+
+
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch raju 
+[root@localhost ~]# 
+[root@localhost ~]# touch /root/raju1
+[root@localhost ~]# 
+[root@localhost ~]# touch ~/raju2
+[root@localhost ~]# 
+[root@localhost ~]# ls 
+abc              Desktop    ibm3                  rahul   sumit1.txt  tcs3
+abc1             Documents  initial-setup-ks.cfg  rajeev  sumit2.txt  tcs4
+abc2             Downloads  karan                 raju    sumit3.txt  tcs5
+abc3             gopesh     Music                 raju1   sumit.txt   Templates
+amit             ibm1       Pictures              raju2   tcs1        Videos
+anaconda-ks.cfg  ibm2       Public                ramesh  tcs2
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  data 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  /data-1 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  /tmp/data-2
+[root@localhost ~]# 
+[root@localhost ~]# ls 
+abc              data       ibm2                  Public  ramesh      tcs2
+abc1             Desktop    ibm3                  rahul   sumit1.txt  tcs3
+abc2             Documents  initial-setup-ks.cfg  rajeev  sumit2.txt  tcs4
+abc3             Downloads  karan                 raju    sumit3.txt  tcs5
+amit             gopesh     Music                 raju1   sumit.txt   Templates
+anaconda-ks.cfg  ibm1       Pictures              raju2   tcs1        Videos
+[root@localhost ~]# 
+[root@localhost ~]# ls /
+amit  boot    dev  home   lib    media  opt   rajeev  run   srv  tmp  var
+bin   data-1  etc  karan  lib64  mnt    proc  root    sbin  sys  usr  xyz
+[root@localhost ~]# 
+[root@localhost ~]# ls /tmp
+amit
+data-2
+gopesh
+karan
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-bolt.service-E888tg
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-colord.service-yaKjNq
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-fwupd.service-KVtT9w
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-geoclue.service-GipPBN
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-ModemManager.service-CcOqKI
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-rtkit-daemon.service-8zPcLm
+tracker-extract-files.0
+tracker-extract-files.1000
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir kapil  /kapil   /tmp/kapil 
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc              Desktop    initial-setup-ks.cfg  rajeev      sumit3.txt  Templates
+abc1             Documents  kapil                 raju        sumit.txt   Videos
+abc2             Downloads  karan                 raju1       tcs1
+abc3             gopesh     Music                 raju2       tcs2
+amit             ibm1       Pictures              ramesh      tcs3
+anaconda-ks.cfg  ibm2       Public                sumit1.txt  tcs4
+data             ibm3       rahul                 sumit2.txt  tcs5
+[root@localhost ~]# 
+[root@localhost ~]# ls /
+amit  boot    dev  home   karan  lib64  mnt  proc    root  sbin  sys  usr  xyz
+bin   data-1  etc  kapil  lib    media  opt  rajeev  run   srv   tmp  var
+[root@localhost ~]# 
+[root@localhost ~]# ls /tmp
+amit
+data-2
+gopesh
+kapil
+karan
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-bolt.service-E888tg
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-colord.service-yaKjNq
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-fwupd.service-KVtT9w
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-geoclue.service-GipPBN
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-ModemManager.service-CcOqKI
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-rtkit-daemon.service-8zPcLm
+tracker-extract-files.0
+tracker-extract-files.1000
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# su - soniya  
+[soniya@localhost ~]$ 
+[soniya@localhost ~]$ ls
+[soniya@localhost ~]$ 
+[soniya@localhost ~]$ ls /root 
+ls: cannot open directory '/root': Permission denied
+[soniya@localhost ~]$ 
+[soniya@localhost ~]$ ls /tmp 
+amit
+data-2
+gopesh
+kapil
+karan
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-bolt.service-E888tg
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-colord.service-yaKjNq
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-fwupd.service-KVtT9w
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-geoclue.service-GipPBN
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-ModemManager.service-CcOqKI
+systemd-private-85a6b3ef677d44a5acce3b6e48741ded-rtkit-daemon.service-8zPcLm
+tracker-extract-files.0
+tracker-extract-files.1000
+[soniya@localhost ~]$ ls /
+amit  boot    dev  home   karan  lib64  mnt  proc    root  sbin  sys  usr  xyz
+bin   data-1  etc  kapil  lib    media  opt  rajeev  run   srv   tmp  var
+[soniya@localhost ~]$ exit
+logout
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  /tcs-data 
+[root@localhost ~]# 
+[root@localhost ~]# ls /
+amit  boot    dev  home   karan  lib64  mnt  proc    root  sbin  sys       tmp  var
+bin   data-1  etc  kapil  lib    media  opt  rajeev  run   srv   tcs-data  usr  xyz
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch  /tcs-data/abc{1..5}
+[root@localhost ~]# 
+[root@localhost ~]# ls /tcs-data
+abc1  abc2  abc3  abc4  abc5
+[root@localhost ~]# 
+[root@localhost ~]# cd  /tcs-data
+[root@localhost tcs-data]# pwd
+/tcs-data
+[root@localhost tcs-data]# ls
+abc1  abc2  abc3  abc4  abc5
+[root@localhost tcs-data]# 
+
+
+[root@localhost tcs-data]# 
+[root@localhost tcs-data]# touch a{1..3}
+[root@localhost tcs-data]# ls
+a1  a2  a3  abc1  abc2  abc3  abc4  abc5
+[root@localhost tcs-data]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch  /tcs-data/b{1..3}
+[root@localhost ~]# 
+[root@localhost ~]# ls /tcs-data
+a1  a2  a3  abc1  abc2  abc3  abc4  abc5  b1  b2  b3
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch  /tcs-data  /amit{1..3}
+[root@localhost ~]# 
+[root@localhost ~]# ls /tcs-data
+a1  a2  a3  abc1  abc2  abc3  abc4  abc5  b1  b2  b3
+[root@localhost ~]# 
+[root@localhost ~]# ls /
+amit   amit3  data-1  home   lib    mnt   rajeev  sbin  tcs-data  var
+amit1  bin    dev     kapil  lib64  opt   root    srv   tmp       xyz
+amit2  boot   etc     karan  media  proc  run     sys   usr
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch  /tcs-data  amit{1..3}
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc    amit3            ibm1                  Pictures  ramesh      tcs3
+abc1   anaconda-ks.cfg  ibm2                  Public    sumit1.txt  tcs4
+abc2   data             ibm3                  rahul     sumit2.txt  tcs5
+abc3   Desktop          initial-setup-ks.cfg  rajeev    sumit3.txt  Templates
+amit   Documents        kapil                 raju      sumit.txt   Videos
+amit1  Downloads        karan                 raju1     tcs1
+amit2  gopesh           Music                 raju2     tcs2
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch rakesh 
+[root@localhost ~]# 
+[root@localhost ~]# touch ~/rakesh`
+> ^C
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch rakesh 
+[root@localhost ~]# 
+[root@localhost ~]# touch ~/rakesh1
+[root@localhost ~]# 
+[root@localhost ~]# touch  /root/rakesh2
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc    anaconda-ks.cfg  ibm3                  rajeev   sumit1.txt  tcs5
+abc1   data             initial-setup-ks.cfg  raju     sumit2.txt  Templates
+abc2   Desktop          kapil                 raju1    sumit3.txt  Videos
+abc3   Documents        karan                 raju2    sumit.txt
+amit   Downloads        Music                 rakesh   tcs1
+amit1  gopesh           Pictures              rakesh1  tcs2
+amit2  ibm1             Public                rakesh2  tcs3
+amit3  ibm2             rahul                 ramesh   tcs4
+[root@localhost ~]# 
+[root@localhost ~]# ls ~
+abc    anaconda-ks.cfg  ibm3                  rajeev   sumit1.txt  tcs5
+abc1   data             initial-setup-ks.cfg  raju     sumit2.txt  Templates
+abc2   Desktop          kapil                 raju1    sumit3.txt  Videos
+abc3   Documents        karan                 raju2    sumit.txt
+amit   Downloads        Music                 rakesh   tcs1
+amit1  gopesh           Pictures              rakesh1  tcs2
+amit2  ibm1             Public                rakesh2  tcs3
+amit3  ibm2             rahul                 ramesh   tcs4
+[root@localhost ~]# ls /root  
+abc    anaconda-ks.cfg  ibm3                  rajeev   sumit1.txt  tcs5
+abc1   data             initial-setup-ks.cfg  raju     sumit2.txt  Templates
+abc2   Desktop          kapil                 raju1    sumit3.txt  Videos
+abc3   Documents        karan                 raju2    sumit.txt
+amit   Downloads        Music                 rakesh   tcs1
+amit1  gopesh           Pictures              rakesh1  tcs2
+amit2  ibm1             Public                rakesh2  tcs3
+amit3  ibm2             rahul                 ramesh   tcs4
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir /fedora 
+[root@localhost ~]# 
+[root@localhost ~]# cd  /fedora
+[root@localhost fedora]# 
+[root@localhost fedora]# ls
+[root@localhost fedora]# 
+[root@localhost fedora]# pwd
+/fedora
+[root@localhost fedora]# mkdir data1
+[root@localhost fedora]# 
+[root@localhost fedora]# ls
+data1
+[root@localhost fedora]# cd  data1
+[root@localhost data1]# 
+[root@localhost data1]# mkdir data2
+[root@localhost data1]# 
+[root@localhost data1]# ls
+data2
+[root@localhost data1]# cd  /data2
+bash: cd: /data2: No such file or directory
+[root@localhost data1]# 
+[root@localhost data1]# 
+[root@localhost data1]# pwd
+/fedora/data1
+[root@localhost data1]# 
+[root@localhost data1]# ls
+data2
+[root@localhost data1]# cd data2
+[root@localhost data2]# 
+[root@localhost data2]# mkdir data3
+[root@localhost data2]# 
+[root@localhost data2]# ls
+data3
+[root@localhost data2]# cd  /fedora/data1/daat2/data3
+bash: cd: /fedora/data1/daat2/data3: No such file or directory
+[root@localhost data2]# 
+[root@localhost data2]# cd  /fedora/data1/data2/data3
+[root@localhost data3]# 
+
+
+
+
+
+
+[root@localhost data3]# 
+[root@localhost data3]# 
+[root@localhost data3]# 
+[root@localhost data3]# 
+[root@localhost data3]# pwd
+/fedora/data1/data2/data3
+[root@localhost data3]# 
+[root@localhost data3]# cd  ..
+[root@localhost data2]# 
+[root@localhost data2]# cd  ../..
+[root@localhost fedora]# 
+[root@localhost fedora]# cd  /
+[root@localhost /]# 
+[root@localhost /]# cd ..
+[root@localhost /]# cd 
+[root@localhost ~]# 
+[root@localhost ~]# pwd
+/root
+[root@localhost ~]# cd  ..
+[root@localhost /]# 
+[root@localhost /]# cd  ..
+[root@localhost /]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd  /fedora
+[root@localhost fedora]# 
+[root@localhost fedora]# ls
+data1
+[root@localhost fedora]# cd data1
+[root@localhost data1]# 
+[root@localhost data1]# ls
+data2
+[root@localhost data1]# cd data2
+[root@localhost data2]# ls
+data3
+[root@localhost data2]# cd data3
+[root@localhost data3]# ls
+[root@localhost data3]# pwd
+/fedora/data1/data2/data3
+[root@localhost data3]# 
+
+
+
+[root@localhost data3]# 
+[root@localhost data3]# 
+[root@localhost data3]# 
+[root@localhost data3]# cd  ..
+[root@localhost data2]# 
+[root@localhost data2]# cd  ../..
+[root@localhost fedora]# 
+[root@localhost fedora]# 
+[root@localhost fedora]# cd  /
+[root@localhost /]# cd 
+[root@localhost ~]# 
+
+
+
+
+
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# ls  /fedora
+data1
+[root@localhost ~]# 
+[root@localhost ~]# tree  /fedora
+/fedora
+└── data1
+    └── data2
+        └── data3
+
+3 directories, 0 files
+[root@localhost ~]# 
+[root@localhost ~]# ls  /fedora
+data1
+[root@localhost ~]# 
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# ls -R  /fedora
+/fedora:
+data1
+
+/fedora/data1:
+data2
+
+/fedora/data1/data2:
+data3
+
+/fedora/data1/data2/data3:
+[root@localhost ~]# 
+
+
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch  /fedora/data1/data2/abc 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# tree  /fedora
+/fedora
+└── data1
+    └── data2
+        ├── abc
+        └── data3
+
+3 directories, 1 file
+[root@localhost ~]# 
+[root@localhost ~]# ls  /fedora/data1/data2
+abc  data3
+[root@localhost ~]# 
+[root@localhost ~]# touch  /fedora/data1/data2/data3/abc
+[root@localhost ~]# 
+[root@localhost ~]# ls  /fedora/data1/data2/data3
+abc
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# tree  /fedora
+/fedora
+└── data1
+    └── data2
+        ├── abc
+        └── data3
+            └── abc
+
+3 directories, 2 files
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# ls -R  /fedora
+/fedora:
+data1
+
+/fedora/data1:
+data2
+
+/fedora/data1/data2:
+abc  data3
+
+/fedora/data1/data2/data3:
+abc
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd  /fedora/data1
+[root@localhost data1]# 
+[root@localhost data1]# ls
+data2
+[root@localhost data1]# cd
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc    anaconda-ks.cfg  ibm3                  rajeev   sumit1.txt  tcs5
+abc1   data             initial-setup-ks.cfg  raju     sumit2.txt  Templates
+abc2   Desktop          kapil                 raju1    sumit3.txt  Videos
+abc3   Documents        karan                 raju2    sumit.txt
+amit   Downloads        Music                 rakesh   tcs1
+amit1  gopesh           Pictures              rakesh1  tcs2
+amit2  ibm1             Public                rakesh2  tcs3
+amit3  ibm2             rahul                 ramesh   tcs4
+[root@localhost ~]# 
+[root@localhost ~]# cd /fedora/data1
+[root@localhost data1]# 
+[root@localhost data1]# 
+
+[root@localhost data1]# 
+[root@localhost data1]# 
+[root@localhost data1]# ls
+data2
+[root@localhost data1]# 
+[root@localhost data1]# ls  ~
+abc    anaconda-ks.cfg  ibm3                  rajeev   sumit1.txt  tcs5
+abc1   data             initial-setup-ks.cfg  raju     sumit2.txt  Templates
+abc2   Desktop          kapil                 raju1    sumit3.txt  Videos
+abc3   Documents        karan                 raju2    sumit.txt
+amit   Downloads        Music                 rakesh   tcs1
+amit1  gopesh           Pictures              rakesh1  tcs2
+amit2  ibm1             Public                rakesh2  tcs3
+amit3  ibm2             rahul                 ramesh   tcs4
+[root@localhost data1]# 
+[root@localhost data1]# ls  /root 
+abc    anaconda-ks.cfg  ibm3                  rajeev   sumit1.txt  tcs5
+abc1   data             initial-setup-ks.cfg  raju     sumit2.txt  Templates
+abc2   Desktop          kapil                 raju1    sumit3.txt  Videos
+abc3   Documents        karan                 raju2    sumit.txt
+amit   Downloads        Music                 rakesh   tcs1
+amit1  gopesh           Pictures              rakesh1  tcs2
+amit2  ibm1             Public                rakesh2  tcs3
+amit3  ibm2             rahul                 ramesh   tcs4
+[root@localhost data1]# 
+[root@localhost data1]# 
+[root@localhost data1]# 
+[root@localhost data1]# 
+[root@localhost data1]# touch  ~/sunit
+[root@localhost data1]# 
+[root@localhost data1]# ls ~
+abc    anaconda-ks.cfg  ibm3                  rajeev   sumit1.txt  tcs4
+abc1   data             initial-setup-ks.cfg  raju     sumit2.txt  tcs5
+abc2   Desktop          kapil                 raju1    sumit3.txt  Templates
+abc3   Documents        karan                 raju2    sumit.txt   Videos
+amit   Downloads        Music                 rakesh   sunit
+amit1  gopesh           Pictures              rakesh1  tcs1
+amit2  ibm1             Public                rakesh2  tcs2
+amit3  ibm2             rahul                 ramesh   tcs3
+[root@localhost data1]# cd
+[root@localhost ~]# 
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# ls /fedora/data1/data2
+abc  data3
+[root@localhost ~]# 
+[root@localhost ~]# cd  /
+[root@localhost /]# 
+[root@localhost /]# cd fedora
+[root@localhost fedora]# 
+[root@localhost fedora]# cd data1
+[root@localhost data1]# 
+[root@localhost data1]# cd data2
+[root@localhost data2]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir /fedora/data1/data2
+mkdir: cannot create directory ‘/fedora/data1/data2’: File exists
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd  /fedora/data1/data2
+[root@localhost data2]# 
+[root@localhost data2]# touch  /ravi
+[root@localhost data2]# 
+[root@localhost data2]# ls /
+amit   amit3  data-1  fedora  karan  media  proc    root  srv       tmp  xyz
+amit1  bin    dev     home    lib    mnt    rajeev  run   sys       usr
+amit2  boot   etc     kapil   lib64  opt    ravi    sbin  tcs-data  var
+[root@localhost data2]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd /fedora/data1/data2
+[root@localhost data2]# 
+[root@localhost data2]# cd  /fedora
+[root@localhost fedora]# pwd
+/fedora
+[root@localhost fedora]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+
+
+
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd  /fedora/data1/data2
+[root@localhost data2]# 
+[root@localhost data2]# cd
+[root@localhost ~]# 
+[root@localhost ~]# date
+Sun Oct  3 16:54:03 IST 2021
+[root@localhost ~]# 
+[root@localhost ~]# cal
+    October 2021    
+Su Mo Tu We Th Fr Sa
+                1  2
+ 3  4  5  6  7  8  9
+10 11 12 13 14 15 16
+17 18 19 20 21 22 23
+24 25 26 27 28 29 30
+31                  
+[root@localhost ~]# cd  -
+/fedora/data1/data2
+[root@localhost data2]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd  /data-1
+[root@localhost data-1]# 
+[root@localhost data-1]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd  -
+/data-1
+[root@localhost data-1]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd 
+[root@localhost ~]# 
+[root@localhost ~]# cd ~
+[root@localhost ~]# 
+[root@localhost ~]# cd  /root  
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd  .
+[root@localhost ~]# 
+[root@localhost ~]# cd  .
+[root@localhost ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# ls  
+abc    anaconda-ks.cfg  ibm3                  rajeev   sumit1.txt  tcs4
+abc1   data             initial-setup-ks.cfg  raju     sumit2.txt  tcs5
+abc2   Desktop          kapil                 raju1    sumit3.txt  Templates
+abc3   Documents        karan                 raju2    sumit.txt   Videos
+amit   Downloads        Music                 rakesh   sunit
+amit1  gopesh           Pictures              rakesh1  tcs1
+amit2  ibm1             Public                rakesh2  tcs2
+amit3  ibm2             rahul                 ramesh   tcs3
+[root@localhost ~]# 
+[root@localhost ~]# ls  .
+abc    anaconda-ks.cfg  ibm3                  rajeev   sumit1.txt  tcs4
+abc1   data             initial-setup-ks.cfg  raju     sumit2.txt  tcs5
+abc2   Desktop          kapil                 raju1    sumit3.txt  Templates
+abc3   Documents        karan                 raju2    sumit.txt   Videos
+amit   Downloads        Music                 rakesh   sunit
+amit1  gopesh           Pictures              rakesh1  tcs1
+amit2  ibm1             Public                rakesh2  tcs2
+amit3  ibm2             rahul                 ramesh   tcs3
+[root@localhost ~]# 
+[root@localhost ~]# ls  /
+amit   amit3  data-1  fedora  karan  media  proc    root  srv       tmp  xyz
+amit1  bin    dev     home    lib    mnt    rajeev  run   sys       usr
+amit2  boot   etc     kapil   lib64  opt    ravi    sbin  tcs-data  var
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cp  /etc/passwd   /root  
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc    anaconda-ks.cfg  ibm3                  rahul    ramesh      tcs3
+abc1   data             initial-setup-ks.cfg  rajeev   sumit1.txt  tcs4
+abc2   Desktop          kapil                 raju     sumit2.txt  tcs5
+abc3   Documents        karan                 raju1    sumit3.txt  Templates
+amit   Downloads        Music                 raju2    sumit.txt   Videos
+amit1  gopesh           passwd                rakesh   sunit
+amit2  ibm1             Pictures              rakesh1  tcs1
+amit3  ibm2             Public                rakesh2  tcs2
+[root@localhost ~]# 
+[root@localhost ~]# cp  /etc/group    .  
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc    anaconda-ks.cfg  ibm2                  Public   rakesh2     tcs2
+abc1   data             ibm3                  rahul    ramesh      tcs3
+abc2   Desktop          initial-setup-ks.cfg  rajeev   sumit1.txt  tcs4
+abc3   Documents        kapil                 raju     sumit2.txt  tcs5
+amit   Downloads        karan                 raju1    sumit3.txt  Templates
+amit1  gopesh           Music                 raju2    sumit.txt   Videos
+amit2  group            passwd                rakesh   sunit
+amit3  ibm1             Pictures              rakesh1  tcs1
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd  /fedora/data1/data2
+[root@localhost data2]# 
+[root@localhost data2]# 
+[root@localhost data2]# cp  /etc/passwd   .
+[root@localhost data2]# 
+[root@localhost data2]# ls  
+abc  data3  passwd
+[root@localhost data2]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+
+
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch  ./mohit 
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc    anaconda-ks.cfg  ibm2                  Pictures  rakesh1     tcs1
+abc1   data             ibm3                  Public    rakesh2     tcs2
+abc2   Desktop          initial-setup-ks.cfg  rahul     ramesh      tcs3
+abc3   Documents        kapil                 rajeev    sumit1.txt  tcs4
+amit   Downloads        karan                 raju      sumit2.txt  tcs5
+amit1  gopesh           mohit                 raju1     sumit3.txt  Templates
+amit2  group            Music                 raju2     sumit.txt   Videos
+amit3  ibm1             passwd                rakesh    sunit
+[root@localhost ~]# 
+[root@localhost ~]# touch ~/mohit1
+[root@localhost ~]# ls
+abc    anaconda-ks.cfg  ibm2                  passwd    rakesh      sunit
+abc1   data             ibm3                  Pictures  rakesh1     tcs1
+abc2   Desktop          initial-setup-ks.cfg  Public    rakesh2     tcs2
+abc3   Documents        kapil                 rahul     ramesh      tcs3
+amit   Downloads        karan                 rajeev    sumit1.txt  tcs4
+amit1  gopesh           mohit                 raju      sumit2.txt  tcs5
+amit2  group            mohit1                raju1     sumit3.txt  Templates
+amit3  ibm1             Music                 raju2     sumit.txt   Videos
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir /redhat
+[root@localhost ~]# 
+[root@localhost ~]# mkdir /redhat/abc{1..3}
+[root@localhost ~]# 
+[root@localhost ~]# ls  /redhat
+abc1  abc2  abc3
+[root@localhost ~]# 
+[root@localhost ~]# mkdir   /kr/network/cloud 
+mkdir: cannot create directory ‘/kr/network/cloud’: No such file or directory
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  -p     /kr/network/cloud 
+[root@localhost ~]# 
+[root@localhost ~]# tree  /kr 
+/kr
+└── network
+    └── cloud
+
+2 directories, 0 files
+[root@localhost ~]# 
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  /kr/network/cloud/ibm 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir -p   /kr/network/cloud/ibm/tcs/hcl 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir   -p  /data1/a1/a2/a3/a4
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# tree  /daat1
+/daat1 [error opening dir]
+
+0 directories, 0 files
+[root@localhost ~]# 
+[root@localhost ~]# tree  /data1
+/data1
+└── a1
+    └── a2
+        └── a3
+            └── a4
+
+4 directories, 0 files
+[root@localhost ~]# 
+[root@localhost ~]# tree  /kr
+[root@localhost ~]# tree  /kr
+/kr
+└── network
+    └── cloud
+        └── ibm
+            └── tcs
+                └── hcl
+
+5 directories, 0 files
+[root@localhost ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd  /kr  
+[root@localhost kr]# ls
+network
+[root@localhost kr]# cd  network
+[root@localhost network]# 
+[root@localhost network]# ls
+cloud
+[root@localhost network]# cd cloud
+[root@localhost cloud]# 
+[root@localhost cloud]# ls
+ibm
+[root@localhost cloud]# cd  ibm
+[root@localhost ibm]# 
+[root@localhost ibm]# ls
+tcs
+[root@localhost ibm]# cd tcs
+[root@localhost tcs]# ls
+hcl
+[root@localhost tcs]# cd hcl
+[root@localhost hcl]# 
+[root@localhost hcl]# 
+[root@localhost hcl]# 
+[root@localhost hcl]# 
+[root@localhost hcl]# 
+[root@localhost hcl]# pwd
+/kr/network/cloud/ibm/tcs/hcl
+[root@localhost hcl]# 
+[root@localhost hcl]# ls
+[root@localhost hcl]# 
+[root@localhost hcl]# 
+[root@localhost hcl]# cd  ..
+[root@localhost tcs]# 
+[root@localhost tcs]# cd ../..
+[root@localhost cloud]# 
+[root@localhost cloud]# cd  /
+[root@localhost /]# cd
+[root@localhost ~]# 
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd  /kr/network/cloud
+[root@localhost cloud]# 
+[root@localhost cloud]# 
+[root@localhost cloud]# ls
+ibm
+[root@localhost cloud]# 
+[root@localhost cloud]# cd  ibm  
+[root@localhost ibm]# 
+[root@localhost ibm]# pwd
+/kr/network/cloud/ibm
+[root@localhost ibm]# 
+[root@localhost ibm]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# ls  
+abc    anaconda-ks.cfg  ibm2                  passwd    rakesh      sunit
+abc1   data             ibm3                  Pictures  rakesh1     tcs1
+abc2   Desktop          initial-setup-ks.cfg  Public    rakesh2     tcs2
+abc3   Documents        kapil                 rahul     ramesh      tcs3
+amit   Downloads        karan                 rajeev    sumit1.txt  tcs4
+amit1  gopesh           mohit                 raju      sumit2.txt  tcs5
+amit2  group            mohit1                raju1     sumit3.txt  Templates
+amit3  ibm1             Music                 raju2     sumit.txt   Videos
+[root@localhost ~]# 
+
+
+
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  old\ movie 
+[root@localhost ~]# ls
+ abc               Desktop                karan        raju         sumit.txt
+ abc1              Documents              mohit        raju1        sunit
+ abc2              Downloads              mohit1       raju2        tcs1
+ abc3              gopesh                 Music        rakesh       tcs2
+ amit              group                 'old movie'   rakesh1      tcs3
+ amit1             ibm1                   passwd       rakesh2      tcs4
+ amit2             ibm2                   Pictures     ramesh       tcs5
+ amit3             ibm3                   Public       sumit1.txt   Templates
+ anaconda-ks.cfg   initial-setup-ks.cfg   rahul        sumit2.txt   Videos
+ data              kapil                  rajeev       sumit3.txt
+[root@localhost ~]# 
+[root@localhost ~]# cd old\ movie
+[root@localhost old movie]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir kr\ network\ cloud
+[root@localhost ~]# 
+[root@localhost ~]# ls
+ abc               gopesh                 passwd       sumit2.txt
+ abc1              group                  Pictures     sumit3.txt
+ abc2              ibm1                   Public       sumit.txt
+ abc3              ibm2                   rahul        sunit
+ amit              ibm3                   rajeev       tcs1
+ amit1             initial-setup-ks.cfg   raju         tcs2
+ amit2             kapil                  raju1        tcs3
+ amit3             karan                  raju2        tcs4
+ anaconda-ks.cfg  'kr network cloud'      rakesh       tcs5
+ data              mohit                  rakesh1      Templates
+ Desktop           mohit1                 rakesh2      Videos
+ Documents         Music                  ramesh
+ Downloads        'old movie'             sumit1.txt
+[root@localhost ~]# 
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  'ibm cloud'
+[root@localhost ~]# 
+[root@localhost ~]# ls
+ abc               gopesh                'old movie'   sumit1.txt
+ abc1              group                  passwd       sumit2.txt
+ abc2              ibm1                   Pictures     sumit3.txt
+ abc3              ibm2                   Public       sumit.txt
+ amit              ibm3                   rahul        sunit
+ amit1            'ibm cloud'             rajeev       tcs1
+ amit2             initial-setup-ks.cfg   raju         tcs2
+ amit3             kapil                  raju1        tcs3
+ anaconda-ks.cfg   karan                  raju2        tcs4
+ data             'kr network cloud'      rakesh       tcs5
+ Desktop           mohit                  rakesh1      Templates
+ Documents         mohit1                 rakesh2      Videos
+ Downloads         Music                  ramesh
+[root@localhost ~]# 
+[root@localhost ~]# cd  'ibm cloud'/
+[root@localhost ~]# cd  'ibm cloud'
+[root@localhost ibm cloud]# 
+[root@localhost ibm cloud]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd  ibm\ cloud
+[root@localhost ibm cloud]# 
+[root@localhost ibm cloud]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd 'kr network cloud'
+[root@localhost kr network cloud]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd  kr\ network\ cloud
+[root@localhost kr network cloud]# 
+[root@localhost kr network cloud]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+
+[root@localhost ~]# mkdir  "new songs"
+[root@localhost ~]# 
+[root@localhost ~]# ls
+ abc               gopesh                'new songs'   ramesh
+ abc1              group                 'old movie'   sumit1.txt
+ abc2              ibm1                   passwd       sumit2.txt
+ abc3              ibm2                   Pictures     sumit3.txt
+ amit              ibm3                   Public       sumit.txt
+ amit1            'ibm cloud'             rahul        sunit
+ amit2             initial-setup-ks.cfg   rajeev       tcs1
+ amit3             kapil                  raju         tcs2
+ anaconda-ks.cfg   karan                  raju1        tcs3
+ data             'kr network cloud'      raju2        tcs4
+ Desktop           mohit                  rakesh       tcs5
+ Documents         mohit1                 rakesh1      Templates
+ Downloads         Music                  rakesh2      Videos
+[root@localhost ~]# 
+[root@localhost ~]# cd  new\ songs
+[root@localhost new songs]# cd
+[root@localhost ~]# 
+[root@localhost ~]# cd  'new songs'
+[root@localhost new songs]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd  "new songs"
+[root@localhost new songs]# 
+[root@localhost new songs]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# ls
+ abc               gopesh                'new songs'   ramesh
+ abc1              group                 'old movie'   sumit1.txt
+ abc2              ibm1                   passwd       sumit2.txt
+ abc3              ibm2                   Pictures     sumit3.txt
+ amit              ibm3                   Public       sumit.txt
+ amit1            'ibm cloud'             rahul        sunit
+ amit2             initial-setup-ks.cfg   rajeev       tcs1
+ amit3             kapil                  raju         tcs2
+ anaconda-ks.cfg   karan                  raju1        tcs3
+ data             'kr network cloud'      raju2        tcs4
+ Desktop           mohit                  rakesh       tcs5
+ Documents         mohit1                 rakesh1      Templates
+ Downloads         Music                  rakesh2      Videos
+[root@localhost ~]# 
+[root@localhost ~]# cd 'ibm cloud'
+[root@localhost ibm cloud]# 
+[root@localhost ibm cloud]# cd
+[root@localhost ~]# 
+[root@localhost ~]# cd  "ibm cloud"
+[root@localhost ibm cloud]# cd
+[root@localhost ~]# 
+[root@localhost ~]# cd  ibm\ cloud
+[root@localhost ibm cloud]# 
+[root@localhost ibm cloud]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  krishna 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir KRishna 
+[root@localhost ~]# 
+[root@localhost ~]# ls
+ abc               group                 'new songs'   sumit1.txt
+ abc1              ibm1                  'old movie'   sumit2.txt
+ abc2              ibm2                   passwd       sumit3.txt
+ abc3              ibm3                   Pictures     sumit.txt
+ amit             'ibm cloud'             Public       sunit
+ amit1             initial-setup-ks.cfg   rahul        tcs1
+ amit2             kapil                  rajeev       tcs2
+ amit3             karan                  raju         tcs3
+ anaconda-ks.cfg   krishna                raju1        tcs4
+ data              KRishna                raju2        tcs5
+ Desktop          'kr network cloud'      rakesh       Templates
+ Documents         mohit                  rakesh1      Videos
+ Downloads         mohit1                 rakesh2
+ gopesh            Music                  ramesh
+[root@localhost ~]# cd krishna
+[root@localhost krishna]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd KRishna
+[root@localhost KRishna]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# tree  /data1
+/data1
+└── a1
+    └── a2
+        └── a3
+            └── a4
+
+4 directories, 0 files
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd /data1/a1/a2/a3
+[root@localhost a3]# 
+[root@localhost a3]# ls
+a4
+[root@localhost a3]# ls  /root 
+ abc               group                 'new songs'   sumit1.txt
+ abc1              ibm1                  'old movie'   sumit2.txt
+ abc2              ibm2                   passwd       sumit3.txt
+ abc3              ibm3                   Pictures     sumit.txt
+ amit             'ibm cloud'             Public       sunit
+ amit1             initial-setup-ks.cfg   rahul        tcs1
+ amit2             kapil                  rajeev       tcs2
+ amit3             karan                  raju         tcs3
+ anaconda-ks.cfg   krishna                raju1        tcs4
+ data              KRishna                raju2        tcs5
+ Desktop          'kr network cloud'      rakesh       Templates
+ Documents         mohit                  rakesh1      Videos
+ Downloads         mohit1                 rakesh2
+ gopesh            Music                  ramesh
+[root@localhost a3]# 
+[root@localhost a3]# 
+[root@localhost a3]# 
+[root@localhost a3]# 
+[root@localhost a3]# ls  ~
+ abc               group                 'new songs'   sumit1.txt
+ abc1              ibm1                  'old movie'   sumit2.txt
+ abc2              ibm2                   passwd       sumit3.txt
+ abc3              ibm3                   Pictures     sumit.txt
+ amit             'ibm cloud'             Public       sunit
+ amit1             initial-setup-ks.cfg   rahul        tcs1
+ amit2             kapil                  rajeev       tcs2
+ amit3             karan                  raju         tcs3
+ anaconda-ks.cfg   krishna                raju1        tcs4
+ data              KRishna                raju2        tcs5
+ Desktop          'kr network cloud'      rakesh       Templates
+ Documents         mohit                  rakesh1      Videos
+ Downloads         mohit1                 rakesh2
+ gopesh            Music                  ramesh
+[root@localhost a3]# 
+
+
+
+[root@localhost a3]# 
+[root@localhost a3]# 
+[root@localhost a3]# 
+[root@localhost a3]# 
+[root@localhost a3]# 
+[root@localhost a3]# touch  ~/soniya  
+[root@localhost a3]# 
+[root@localhost a3]# ls ~
+ abc               group                 'new songs'   soniya
+ abc1              ibm1                  'old movie'   sumit1.txt
+ abc2              ibm2                   passwd       sumit2.txt
+ abc3              ibm3                   Pictures     sumit3.txt
+ amit             'ibm cloud'             Public       sumit.txt
+ amit1             initial-setup-ks.cfg   rahul        sunit
+ amit2             kapil                  rajeev       tcs1
+ amit3             karan                  raju         tcs2
+ anaconda-ks.cfg   krishna                raju1        tcs3
+ data              KRishna                raju2        tcs4
+ Desktop          'kr network cloud'      rakesh       tcs5
+ Documents         mohit                  rakesh1      Templates
+ Downloads         mohit1                 rakesh2      Videos
+ gopesh            Music                  ramesh
+[root@localhost a3]# 
+[root@localhost a3]# 
+[root@localhost a3]# 
+[root@localhost a3]# 
+[root@localhost a3]# pwd
+/data1/a1/a2/a3
+[root@localhost a3]# 
+[root@localhost a3]# 
+[root@localhost a3]# touch   ../../rajeev
+[root@localhost a3]# 
+[root@localhost a3]# ls
+a4
+[root@localhost a3]# ls   ../..
+a2  rajeev
+[root@localhost a3]# 
+[root@localhost a3]# mkdir  ../alok  
+[root@localhost a3]# 
+[root@localhost a3]# ls 
+a4
+[root@localhost a3]# ls  ..
+a3  alok
+[root@localhost a3]# 
+
+[root@localhost a3]# 
+[root@localhost a3]# ls
+a4
+[root@localhost a3]# 
+[root@localhost a3]# touch  a4/abc 
+[root@localhost a3]# 
+[root@localhost a3]# ls
+a4
+[root@localhost a3]# ls  a4
+abc
+[root@localhost a3]# cd a4
+[root@localhost a4]# ls
+abc
+[root@localhost a4]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# ls /data1/a1/a2/a3/a4
+abc
+[root@localhost ~]# 
+
+
+
+[root@localhost ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# ls
+ abc               group                 'new songs'   soniya
+ abc1              ibm1                  'old movie'   sumit1.txt
+ abc2              ibm2                   passwd       sumit2.txt
+ abc3              ibm3                   Pictures     sumit3.txt
+ amit             'ibm cloud'             Public       sumit.txt
+ amit1             initial-setup-ks.cfg   rahul        sunit
+ amit2             kapil                  rajeev       tcs1
+ amit3             karan                  raju         tcs2
+ anaconda-ks.cfg   krishna                raju1        tcs3
+ data              KRishna                raju2        tcs4
+ Desktop          'kr network cloud'      rakesh       tcs5
+ Documents         mohit                  rakesh1      Templates
+ Downloads         mohit1                 rakesh2      Videos
+ gopesh            Music                  ramesh
+[root@localhost ~]# 
+[root@localhost ~]# cd Pictures
+[root@localhost Pictures]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd pictures
+bash: cd: pictures: No such file or directory
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# ls
+ abc               group                 'new songs'   soniya
+ abc1              ibm1                  'old movie'   sumit1.txt
+ abc2              ibm2                   passwd       sumit2.txt
+ abc3              ibm3                   Pictures     sumit3.txt
+ amit             'ibm cloud'             Public       sumit.txt
+ amit1             initial-setup-ks.cfg   rahul        sunit
+ amit2             kapil                  rajeev       tcs1
+ amit3             karan                  raju         tcs2
+ anaconda-ks.cfg   krishna                raju1        tcs3
+ data              KRishna                raju2        tcs4
+ Desktop          'kr network cloud'      rakesh       tcs5
+ Documents         mohit                  rakesh1      Templates
+ Downloads         mohit1                 rakesh2      Videos
+ gopesh            Music                  ramesh
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cat anaconda-ks.cfg 
+
+[root@localhost ~]# cat anaconda-ks.cfg 
+#version=RHEL8
+ignoredisk --only-use=sda
+autopart --type=lvm
+# Partition clearing information
+clearpart --none --initlabel
+# Use graphical install
+graphical
+repo --name="AppStream" --baseurl=file:///run/install/repo/AppStream
+# Use CDROM installation media
+cdrom
+# Keyboard layouts
+keyboard --vckeymap=us --xlayouts='us'
+# System language
+lang en_US.UTF-8
+
+# Network information
+network  --bootproto=dhcp --device=ens160 --ipv6=auto --activate
+network  --hostname=localhost.localdomain
+# Root password
+rootpw --iscrypted $6$JM6IaZlxmRffnPet$t6IQgIBEpPknkmDEIDEDyAmEykxj2KbGH1ILVBUuj.MjTc2AFKzjOVQkJO0/NxsITvLEutsyVApM0BEga7zpe0
+# X Window System configuration information
+xconfig  --startxonboot
+# Run the Setup Agent on first boot
+firstboot --enable
+# System services
+services --disabled="chronyd"
+# Intended system purpose
+syspurpose --role="Red Hat Enterprise Linux Server" --sla="Self-Support" --usage="Development/Test"
+# System timezone
+timezone Asia/Kolkata --isUtc --nontp
+user --name=krishna --password=$6$XmWXeFagQKFZY4E0$Ij8m4QqWAJh5vulXKpw1e5Fzpememz2A4oampTf/D7Bt70HCy7gaPyXgQs07bSfaQLgNwlBuo4pl05HEOnGte. --iscrypted --gecos="krishna"
+
+%packages
+@^graphical-server-environment
+kexec-tools
+
+%end
+
+%addon com_redhat_kdump --enable --reserve-mb='auto'
+
+%end
+
+%anaconda
+pwpolicy root --minlen=6 --minquality=1 --notstrict --nochanges --notempty
+pwpolicy user --minlen=6 --minquality=1 --notstrict --nochanges --emptyok
+pwpolicy luks --minlen=6 --minquality=1 --notstrict --nochanges --notempty
+%end
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd anaconda-ks.cfg 
+bash: cd: anaconda-ks.cfg: Not a directory
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# ls
+ abc               group                 'new songs'   soniya
+ abc1              ibm1                  'old movie'   sumit1.txt
+ abc2              ibm2                   passwd       sumit2.txt
+ abc3              ibm3                   Pictures     sumit3.txt
+ amit             'ibm cloud'             Public       sumit.txt
+ amit1             initial-setup-ks.cfg   rahul        sunit
+ amit2             kapil                  rajeev       tcs1
+ amit3             karan                  raju         tcs2
+ anaconda-ks.cfg   krishna                raju1        tcs3
+ data              KRishna                raju2        tcs4
+ Desktop          'kr network cloud'      rakesh       tcs5
+ Documents         mohit                  rakesh1      Templates
+ Downloads         mohit1                 rakesh2      Videos
+ gopesh            Music                  ramesh
+[root@localhost ~]# 
+[root@localhost ~]# mkdir -p    /red/green/yellow
+[root@localhost ~]# 
+[root@localhost ~]# ls  /red
+green
+[root@localhost ~]# tree   /red
+/red
+└── green
+    └── yellow
+
+2 directories, 0 files
+[root@localhost ~]# 
+[root@localhost ~]# ls  -R /red
+/red:
+green
+
+/red/green:
+yellow
+
+/red/green/yellow:
+[root@localhost ~]# cd  /red
+[root@localhost red]# ls
+green
+[root@localhost red]# cd  green
+[root@localhost green]# 
+[root@localhost green]# ls
+yellow
+[root@localhost green]# 
+[root@localhost green]# cd  yellow
+[root@localhost yellow]# 
+[root@localhost yellow]# pwd
+/red/green/yellow
+[root@localhost yellow]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch  /red/green/abc
+[root@localhost ~]# 
+[root@localhost ~]# tree  /red
+[root@localhost ~]# tree  /red
+/red
+└── green
+    ├── abc
+    └── yellow
+
+2 directories, 1 file
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# ls -R  /red
+/red:
+green
+
+/red/green:
+abc  yellow
+
+/red/green/yellow:
+[root@localhost ~]# 
+
+[root@localhost ~]# cd /red/green/yellow
+[root@localhost yellow]# 
+[root@localhost yellow]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch  /red/green/abc
+[root@localhost ~]# 
+[root@localhost ~]# touch /red/green/yellow/abc  
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# ls /red/green
+abc  yellow
+[root@localhost ~]# 
+[root@localhost ~]# ls /red/green/yellow
+abc
+[root@localhost ~]# cat  /red/green/abc 
+[root@localhost ~]# 
+[root@localhost ~]# cat  /red/green/yellow/abc 
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+=============================
+
+
+
+
+
+ 

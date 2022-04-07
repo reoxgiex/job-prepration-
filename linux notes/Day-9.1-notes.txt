@@ -1,0 +1,155 @@
+=================================
+Day-9  Session 
+=================================
+1- Commented Line and un commented lines
+2- Hidden files and hidden Directory
+3- Non Hidden Files and non hidden directory
+=================================
+
+Task-1  How we can created or list any hidden file and hidden directory
+task-2  Live Example - How we can execute set of command after every login prompt
+        1- Local to Local
+        2- using remote session 
+
+==================================
+task-3 How we can access my virtual machine using IP address + putty ==> Remote login
+==================================
+task-4  How we Create Alias or commands shortcut
+
+==================================
+Command Notes
+==================================
+
+
+    6  ls /
+    7  cat  /etc/sudoers 
+    8  touch abc  
+    9  mkdir data 
+   10  ls  
+   11  ls  -a 
+   12  ls 
+   13  l.
+   14  ls -a 
+   15  touch  .ibm  
+   16  ls 
+   17  l.
+   18  cat  .ibm
+   19  echo  "hello"  >  .ibm 
+   20  cat  .ibm  
+   21  mkdir .tcs  
+   22  ls
+   23  l.
+   24  cd  tcs  
+   25  cd  .tcs  
+   26  touch abc  
+   27  mkdir data 
+   28  ls
+   29  cd
+   30  ls -a 
+   31  vim  .ibm 
+   32  cat  .ibm  
+   33  l.
+   34  echo  "welcome"
+   35  date  
+   36  cal  
+   37  vim  .bashrc 
+   38  cat  .bashrc 
+   39  exit
+   40  uptime 
+   41  vim  .bashrc 
+   42  date
+   43  cal
+   44  grep   root   /etc/passwd
+   45  grep   games    /etc/passwd
+   46  grep   --color  root  /etc/passwd
+   47  history 
+   48  su -  krishna 
+   49  ifconfig 
+   50  vim /etc/sysconfig/network-scripts/ifcfg-ens160 
+   51  ifup ens160  
+   52  ifconfig 
+   53  vim /etc/sysconfig/network-scripts/ifcfg-ens160 
+   54  ifconfig 
+   55  vim  .bashrc 
+   56  vim /etc/motd  
+   57  vim  /etc/rc.local 
+   58  history 
+   59  clear
+   60  ifconfig 
+   61  lsblk 
+   62  alias  
+   63  ls -l 
+   64  ll
+   65  grep  root  /etc/passwd
+   66  grep --color    root  /etc/passwd
+   67  alias  c='clear'
+   68  alias  ipinfo='ifconfig'
+   69  alias  diskinfo='lsblk'
+   70  c
+   71  diskinfo 
+   72  ipinfo 
+   73  alias 
+   74  vim  .bashrc 
+   75  cat  .bashrc 
+   76  exit
+   77  c
+   78  diskinfo 
+   79  ipinfo 
+   80  alias 
+   81  clear
+   82  history 
+   83  ifconfig
+   84  date 
+   85  cal
+   86  alias   dinfo='date;cal'
+   87  dinfo 
+   88  alia
+   89  alias 
+   90  lsblk  
+   91  lsblk   |  grep -i swap
+   92  alias swapprint='lsblk   |  grep -i swap'
+   93  swapprint 
+   94  cat  .bashrc 
+   95  unalias  c 
+   96  alias 
+   97  c
+   98  exit
+   99  c
+  100  unalias  -a  
+  101  alias 
+  102  ls  
+  103  ls   --color 
+  104  grep root  /etc/passwd
+  105  grep --color  root  /etc/passwd
+  106  alias
+  107  vim  .bashrc 
+  108  alias 
+  109  su -  krishna  
+  110  ls   /usr/local/bin 
+  111  ls  /usr/bin 
+  112  ls  /usr/sbin 
+  113  ls   /usr/local/bin 
+  114  ps -aux |  grep sshd
+  115  uptime 
+  116  vim   /usr/local/bin/runningtime 
+  117  cat    /usr/local/bin/runningtime 
+  118  runningtime
+  119  ls  -l    /usr/local/bin/runningtime 
+  120  chmod  +x   /usr/local/bin/runningtime 
+  121  ls  -l    /usr/local/bin/runningtime 
+  122  runningtime
+  123  su - krishna  
+  124  useradd soniya 
+  125  su - soniya  
+  126  vim  /usr/local/bin/runningtime 
+  127  runningtime 
+  128  vim  /usr/local/bin/runningtime 
+  129  ls -l   /usr/local/bin/runningtime 
+  130  chmod  -x  /usr/local/bin/runningtime
+  131  ls -l   /usr/local/bin/runningtime 
+  132  rm   -rf  /usr/local/bin/runningtime 
+  133  runningtime
+  134  vim  .bashrc 
+
+=============================================
+

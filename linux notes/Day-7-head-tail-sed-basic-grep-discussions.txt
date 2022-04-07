@@ -1,0 +1,119 @@
+=======================================
+
+    Day-7 Session 
+
+=======================================
+File   <===>  File
+Folder <===>  Directory
+=======================================
+# touch  abc    [ to create any blank file ]
+
+#  gedit        [ create + edit + save ]  support only GUI mode
+
+#  vi  filename
+     OR               [ create edit save ]  support in both CLI and GUI mode
+  vim  filename
+
+=======================================
+Machine <== OS <== Install
+
+1- System defined
+2- created by any users
+
+=======================================
+#  ls  /
+
+How we can read any file content on the screen ?
+
+
+# cat  <filename>
+
+# cat  /etc/passwd   ===> system defined file
+
+# vim   /tmp/xyz     ===> created by any user
+
+hello india
+
+:wq
+
+# cat  /tmp/xyz  
+
+
+vi and vim  ==> advance  operation 
+
+=======================================
+
+First Topic:-  
+
+What is the use of head and tail command ?
+
+head   ==> it prints by default 10 lines from top of any file.
+
+tail   ==> it prints by default 10 lines from bottom of any file.
+
+
+# head   <options>     <filename>
+# tail   <options>     <filename>
+           OR
+
+# <any-command-name>  | head  <options>
+# <any-command-name>  | tail  <options>
+
+=======================================
+
+sed  ==> it is also use to print any line numbers on the screen from any file or from any command output.
+
+# sed  'action'    <filename>
+
+       OR
+# <any-command> | sed  'action'
+
+-n    ==> is the mandatory option if we are using this command in print operation
+
+=======================================
+
+Grep Command Examples 
+
+=======================================
+
+#  cat  /etc/passwd  ==> will print entire content with this single command on screen
+
+
+grep  ==> it is use search any patterns or string in any file or from any command output.
+
+# grep  <options>   <pattern or string>   <file name>
+
+                   OR
+
+# <any-command-name>  | grep <options>   <pattern or string>
+
+=======================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

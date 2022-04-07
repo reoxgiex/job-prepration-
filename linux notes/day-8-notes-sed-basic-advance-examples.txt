@@ -1,0 +1,211 @@
+    1  cat  -n  /etc/passwd 
+    2  sed    '1p'  /etc/passwd 
+    3  sed  -n     '1p'  /etc/passwd 
+    4  sed  -n     '5p'  /etc/passwd 
+    5  sed  -n     '1,5p'  /etc/passwd 
+    6  sed  -n     '1p;5p'  /etc/passwd 
+    7  sed  -n  '1p'  /etc/passwd
+    8  sed  -n  '$p'  /etc/passwd
+    9  history 
+   10  cat -n  /etc/passwd  | sed -n  '1p'
+   11  cat -n  /etc/passwd  | sed -n  '5p'
+   12  cat -n  /etc/passwd  | sed -n  '1,5p'
+   13  cat -n  /etc/passwd  | sed -n  '1p;5p'
+   14  cat -n  /etc/passwd  | sed -n  '1p'
+   15  cat -n  /etc/passwd  | sed -n  '$p'
+   16  cat -n  /etc/passwd  | sed -n  '1,5p;11p;21p;36,$p'
+   17  cat -n  /etc/passwd  | sed -n  '1,5p;11p;21p;36,$p'  >  /info
+   18  cat  /info 
+   19  cat  /etc/passwd
+   20  cat -n  /etc/passwd |  grep root  
+   21  cat -n  /etc/passwd |  grep root   | sed  -n  '1p'
+   22  lsblk  
+   23  lsblk   |  grep sda
+   24  lsblk   |  grep sda |  tail -n 2 
+   25  lsblk   |  grep sda |  sed  -n  '2,3p'
+   26  lsblk 
+   27  lsblk  | sed  -n  '1p'
+   28  lsblk  | sed  -n  '1p'  >  /report 
+   29  cat  /report 
+   30  lsblk   |  grep sda |  tail -n 2 
+   31  lsblk   |  grep sda |  tail -n 2   >>  /report  
+   32  cat  /report 
+   33  lsblk  |  sed  -n  '1p;3,4p'
+   34  lsblk  |  sed  -n  '1p;3,4p'  >  /report 
+   35* cat   /report 
+   36  lsblk  | cat -n |  sed  -n  '1p;3,4p'  
+   37  lsblk  |   sed  -n  '1p;3,4p'   | cat -n 
+   38  cat  -n  /etc/samba/smb.conf
+   39  sed  -n '7p'  /etc/samba/smb.conf
+   40  grep SAMBA  /etc/samba/smb.conf
+   41  grep -E  'root|games|ftp'    /etc/passwd
+   42  grep -E  'root|games|ftp'    /etc/passwd | sed  -n  '1p;$p'
+   43  head  -n 5  /etc/passwd
+   44  cat    /etc/passwd
+   45  head  /etc/passwd
+   46  head  /etc/passwd  >  /report  
+   47  cat  -n  /report 
+   48  sed   '6d'  /report 
+   49  cat  /report 
+   50  sed   '6d'  /report 
+   51  sed   '1,5d'  /report 
+   52  sed   '6!d'  /report 
+   53  sed  -n  '6p'   /report 
+   54  sed   '1,7d'  /report 
+   55  sed   '1,7d'  /report  >  /new
+   56  cat  /new 
+   57  cat  /report 
+   58  lsblk
+   59  lsblk | sed  '3,5d'
+   60  lsblk  
+   61  cat  /report 
+   62  sed  '6d'   /report 
+   63  sed  -i   '6d'   /report 
+   64  cat -n  /report  
+   65  sed   '5,7d'   /report 
+   66  sed  -i    '5,7d'   /report 
+   67  cat  -n  /report 
+   68  sed  '3d'  /report 
+   69  sed  -i   '3d'  /report 
+   70  cat  /report  
+   71  cat  /report 
+   72  cat  /report  | sed '3d'
+   73  cat  /report  | sed -i  '3d'
+   74  cat  /report 
+   75  sed -i   '2d'  /report 
+   76  cat -n  /report 
+   77  cat  /report   | sed  -i  '2d'
+   78  head /etc/passwd >  /report 
+   79  cat  /report 
+   80  cat -n    /report 
+   81  sed  '7a KR Network Cloud'   /report 
+   82  cat  /report 
+   83  sed  '7i KR Network Cloud'   /report 
+   84  sed  '7a KR Network Cloud'   /report 
+   85  sed  -i   '7a KR Network Cloud'   /report 
+   86  cat  -n  /report 
+   87  sed  -i   '7i KR Network Cloud'   /report 
+   88  cat  -n  /report 
+   89  sed  -i   '7i KR' Network Cloud'   /report 
+   90  sed  -i   '7i KR'\ Network Cloud'   /report 
+   91  sed  -i   '7i KR'/ Network Cloud'   /report 
+   92  sed  -i   "7i KR' Network Cloud"  /report 
+   93  cat  -n  /report 
+   94  cat  /report 
+   95  grep root    /report 
+   96  head  /etc/passwd >  /report  
+   97  cat  /report 
+   98  grep root  /report 
+   99  sed  's/root/network/'  /report 
+  100  sed  's/root/network/g'  /report 
+  101  sed  '1s/root/network/g'  /report 
+  102  sed  '1s/root/network/'  /report 
+  103  sed  '1s/root/network/2'  /report 
+  104  sed  '1s/root/network/2g'  /report 
+  105  sed  's/root/network/2g'  /report 
+  106  sed  's/root/network/g'  /report 
+  107  sed  's/root/network/'  /report 
+  108  sed  's/root/network/g'  /report 
+  109  sed  '1s/root/network/g'  /report 
+  110  sed  's/root/network/g'  /report 
+  111  sed  '1,10s/root/network/g'  /report 
+  112  sed  's/ROOT/network/g'  /report 
+  113  sed  's/ROOT/network/gi'  /report 
+  114* sed  's/apple/network/gi'  /report 
+  115  cat  /report 
+  116  sed  's/root/network/g'   /report 
+  117  grep root /report 
+  118  grep root /report  | sed  's/root/network/'
+  119  grep root /report  | sed  's/root/network/g'
+  120  grep root /report  | sed  's/root/network/gi'
+  121  grep root /report  | sed  '1s/root/network/gi'
+  122  cat  /report 
+  123  grep root  /report 
+  124  grep games  /report 
+  125  grep shutdown  /report 
+  126  sed  -e  's/root/network/g'  -e  's/shutdown/cloud/g'   /report  
+  127  sed   's/root/network/g;s/shutdown/cloud/g'   /report  
+  128  sed   's/root/network/g;s/shutdown/cloud/g'   /report   | grep -E 'network|cloud'
+  129  sed   's/root/network/g;s/shutdown/cloud/g'   /report   
+  130  sed   's/root/network/g;s/shutdown/cloud/g'   /report   | grep -E 'network|cloud'
+  131  history 
+  132  cat  /report 
+  133  sed  -i  's/root/network/g'  /report 
+  134  grep root  /report 
+  135  grep network    /report 
+  136  sed  -i  's/network/cloud/g'  /report 
+  137  grep network    /report 
+  138  grep root  /report 
+  139  grep  cloud    /report 
+  140  cat  /report  
+  141  sed  's/:/ /'  /report 
+  142  sed  's/:/ /g'  /report 
+  143  sed  's/:/ /g'  /report   >  /new-file  
+  144  cat  /report 
+  145  cat  /new-file 
+  146  sed  's/:/       /g'  /report 
+  147  sed  's/:/>>/g'  /report 
+  148  cat  -n  /etc/sudoers 
+  149  sed   -n  '100p'   /etc/sudoers 
+  150  sed   '100s/^/#/'   /etc/sudoers 
+  151  sed   '100s/^/#/'   /etc/sudoers  | sed  -n  '100p'
+  152  sed  -i    '100s/^/#/'   /etc/sudoers  
+  153  sed   -n  '100p'   /etc/sudoers 
+  154  sed   '100s/^#//'   /etc/sudoers 
+  155  sed -i    '100s/^#//'   /etc/sudoers 
+  156  sed   -n  '100p'   /etc/sudoers 
+  157  history 
+  158  grep  'root'  /etc/passwd
+  159  grep  'root'  /etc/passwd | sed  '1s/root/clod/'
+  160  history 
+  161  lsblk  
+  162  lsblk   |  head  -n  4
+  163  lsblk   |  head  -n  4 | sed  's/disk/harddisk/'
+  164  lsblk   |  head  -n  4 | sed  's/disk/harddisk/'   
+  165  lsblk   |  head  -n  4 | sed  's/disk/harddisk/'    | sed  '$d'
+  166* lsblk   |  head  -n  4 | sed  's/disk/harddisk/'    | sed  '$d'  > /info
+  167  cat  /info 
+  168  ls  /
+  169  ifconfig 
+  170  ifconfig  |  grep inet 
+  171  ifconfig  |  grep -w  inet 
+  172  ifconfig  |  grep -w  inet | head  -n 1  
+  173  ifconfig  |  grep -w  inet | head  -n 1   | awk  '{print $2}'
+  174  ifconfig  |  grep -w  inet | head  -n 1   | awk  '{print $4}'
+  175  ifconfig  |  grep -w  inet | head  -n 1   | awk  '{print $1,$4}'
+  176  ifconfig  |  grep -w  inet | head  -n 1   | awk  '{print $2,$4}'
+  177  ifconfig  |  grep -w  inet | head  -n 1   | awk  '{print $2}'
+  178  ifconfig 
+  179  ifconfig |  grep ether
+  180  ifconfig |  grep ether | head  -n 1  
+  181  ifconfig |  grep ether -A1 
+  182  ifconfig |  grep ether
+  183  ifconfig |  grep ether | head  -n 1  
+  184  ifconfig |  grep ether | head  -n 1  | awk  '{print $2}'
+  185  ifconfig  |  grep -w  inet | head  -n 1   | awk  '{print $2}'
+  186  a=5
+  187  echo $a
+  188  abc=$(ifconfig |  grep ether | head  -n 1  | awk  '{print $2}')
+  189  echo $abc  
+  190  xyz=$(ifconfig  |  grep -w  inet | head  -n 1   | awk  '{print $2}')
+  191  echo $xyz 
+  192  echo  " my machine ip addressis = $xyz and mac address is = $abc "
+  193  env  
+  194  env     |  grep   xyz 
+  195  env     |  grep   abc 
+  196  set |  grep abc  
+  197  set |  grep xyz  
+  198  set 
+  199  env 
+  200  history 
+  201  xyz=krishna 
+  202  echo $xyz
+  203  history 
+  204  ifconfig |  grep -w inet
+  205  ifconfig |  grep -w inet | head -n 2
+  206  ifconfig |  grep -w inet | head -n 2  | awk  '{print $2}'
+  207  ifconfig 
+  208  ifconfig |  grep -w inet | head -n 2  | awk  '{print $2}'
+  209  ls -a
+  210  history 
+  211  history  >  /root/day-8-notes

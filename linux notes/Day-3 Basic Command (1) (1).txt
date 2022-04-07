@@ -1,0 +1,349 @@
+========================================
+   Day-3 Session Linux - Basic Class 
+========================================
+Machine  <=== Operating System  <=== Application or software or tools
+========================================
+redhat Linux  ==> OS ==> 
+========================================
+========================================
+
+Types of login access method ?
+
+1- Local to local
+2- Remote login  
+========================================
+1- Physical machine 
+2- Virtual machine 
+3- Cloud based infra 
+========================================
+Types of Login User ?
+
+1- Super user      ==> root               ==> #    ==> Full Power
+2- Normal users    ==> amit deepak sumit  ==> $    ==> Limited Power
+
+SUDO  user  ==> with this topic we can increase or decrease Rights to any users.
+
+#  ==>  Privileged Mode
+$  ==>  Non-Privileged Mode
+========================================
+Types of Login mode ?
+
+1- GUI Mode
+2- CLI Mode 
+
+========================================
+
+Task-1  How we can login with root account in GUI mode ?
+
+          not listed <=== enter
+
+ username:   root
+ password:   redhat   <== enter
+
+========================================
+
+Task-2  How we can open terminal to give input any commands ?
+
+Activities  ===>  Terminal  ==>
+
+Window or terminal window Short keys
+
+Ctrl + Shift  ++++   ==> to increase the font size
+Ctrl + ---           ==> to decease the font size
+
+# exit or  Ctrl + d   ==> for logout from the current user
+
+
+Alt + F2   ==> to get run application window
+
+gnome-terminal   ==> to open the command terminal 
+
+Alt + F10        ==> to open terminal in full size
+Alt + F5         ==> to open terminal windows in small size
+
+Ctrl + Shift + n  ==> to open new terminal windows to run the command
+Ctrl + Shift + t  ==> to open sub terminal in existing terminal
+Ctrl + PageUp/pageDown  ==> to switch between the terminal tabs
+#clear OR Ctrl + l      ==> to clear screen 
+ctrl + c                ==> to quit from any running task
+Alt + F4                ==> to close all terminal windows
+
+=====================================================
+Task-3
+
+Command line short keys
+ 
+Example:-
+
+# systemctl  restart  network 
+
+Ctrl + a             ==> to move cursor in beginning of the command
+Ctrl + e             ==> to move cursor in end of the command
+Ctrl + <-- [arrow]   ==> to move cursor word by word in back side
+Ctrl + --> [arrow]   ==> to move cursor word by word in forward side
+Ctrl + u             ==> to delete command before the cursor   
+Ctrl + k             ==> to delete command After the cursor 
+
+Ctrl + r     ==> to search and execute any command from the history   
+
+!15          ==> to run 15 number command from the history
+!-4          ==> to run forth number command from the back side
+
+=====================================================
+
+Task-3   How we can add any normal user and apply password for login
+
+# useradd  <username>
+   or 
+  adduser
+
+# passwd   <username>
+
+=====================================================
+Task-4  How we can switch into any user account using su command ?
+
+# su -  <username>
+
+$
+
+$ exit    { for logout }
+
+#
+
+=====================================================
+
+Task-5  Rules    
+  
+ Command without any options      ==> # useradd  soniya    # clear     # ls 
+ Command with any single options  ==> # userdel -r  soniya    
+ Command with multiple options    ==> # userdel -r  -f  soniya 
+
+# userdel  <options>   <username>
+           OR
+#commandname  <options>   <input value>
+
+====================================================
+
+types of options apply method ?
+
+1- started with single   -
+2- started with double   --
+
+# userdel  --help
+      OR
+# userdel   -h
+
+syntax:-
+
+# directcommand                     # clear    # pwd 
+# commad   space  argument
+# command  space   option1    argument
+# command  space   option1  option1   option3 ... so on     argument
+# command  space   -multipleoptions    argument
+# command  space   --option    --option   --option    argument
+                      or          or         or
+                     word         word       word
+
+=======================================================
+ File     <===>  File
+ Folder   <===>  Directory 
+
+=======================================================
+
+Task-6  Types of command prompt ?
+
+login: root
+password: redhat
+
+[ root @ localhost  ~ ] #
+[deepak @ localhost ~ ] $
+
+
+=====================================
+
+Task-7
+
+How we can reboot any linux machine ?
+
+# reboot   OR  #  init  6     OR   #  systemctl   reboot 
+
+# reboot  -f 
+
+====================================
+
+Task-8 
+
+How we can poweroff any linux machine ?
+
+# poweroff    OR   #  init   0    OR    #  systemctl  poweroff 
+
+====================================
+Task-9   ==> Data Planning ?
+
+Machine <=== Physical Machine 
+        <=== Virtual machine       <====  DISK  <=== Operating System
+        <=== Cloud based machine
+
+
+machine  <=== Disk  <=== OS
+
+1-  Default Data      <=== 1- During the OS installation time
+                      <=== 2- After the OS installation ==> if  we are installing any software or application/Tools
+
+
+2-  Custom Data       <=== After the OS installation time only  ==>  Created by any users always 
+
+====================================
+Examples:-
+
+Windows   ==>  Drive OR Disk  ==> Partition  ==>    C:\      D:\     E:\ 
+Linux     ==>  Drive OR Disk  ==> partition  ==> There is no concept of C D E F drive. 
+
+In Linux Operating System  <==== Default Data  +  Custom Data
+
+
+we have single parent place  or parent folder or parent directory which is called  ==>  / 
+
+
+[root  @  localhost  ~ ] #  ls  /
+
+==> Around 19  sub directory   ==> OS  ==>  
+
+  # ls  /
+
+output  ==> 19 directory
+
+  # mkdir  /data 
+
+  # ls  /
+
+output    ==> 20 
+  
+  # mkdir  /fedora 
+
+  # ls  /
+
+output   ==>  21
+
+
+  #  mkdir   /fedora/redhat
+
+output   ==>  21 directory 
+
+======================================
+
+/   ==> around 19 sub directory 
+
+    ==> 17     ==> Operating System ==> operate 
+    ==>  2     ==>  User home account ==> reserved  ==>  /root   ==> home account of super user
+                                                    ==>  /home   ==> home account for all normal user
+
+=====================================
+/home
+
+/home/deepak
+
+====================================
+
+[ root @ localhost  ~  ] # ls    ==>  /root 
+
+[ deepak @ localhost ~ ] $ ls    ==>  /home/deepak
+
+                         $ ls  /root        ==> will not execute 
+                         $ ls /home/rajeev  ==> will not execute 
+                     ~ ] $ ls 
+                     ~ ] $ ls  /home/deepak  ==> will work
+                     ~ ] $ ls  /
+
+=====================================
+
+root           ==>  private place or home directory  [ yes ]  +  public place [ Full access ]
+
+deepak         ==>  private place or home directory  [ yes ]  +  public place [ read only permission ] 
+                                                                                        OR
+                                                                  we can set permissions as per demands
+
+=====================================
+
+/         ==> root partition or parent directory or parent folder
+
+/root     ==> private or home directory of super user
+
+root      ==> Super User Name
+
+/home/deepak  ==> home directory of any normal user
+/home/rajeev  ==> 
+
+=====================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

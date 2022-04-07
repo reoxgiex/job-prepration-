@@ -1,0 +1,49 @@
+==================================
+
+     Day-6   Session - Part-1 
+
+==================================
+
+
+# touch  abc     ==> blank file
+
+# mkdir  data 
+
+# ls 
+
+# cat  <filename> 
+
+# echo  hello india  >  abc 
+
+# cat  abc
+
+hello india
+
+# echo hello world  >> abc 
+
+# cat  abc 
+
+hello india
+hello world
+
+===============
+File Editing Tools or Commands ?
+
+1-  GUI based   ==> gedit       ==> does not support in CLI based Machines
+
+2-  CLI based   ==> vi and vim  ==> GUI + CLI Mode ==> Support ==> using only short keys
+
+==============
+
+
+  
+
+
+
+
+
+
+
+
+
+==================================

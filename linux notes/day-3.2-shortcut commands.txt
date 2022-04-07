@@ -1,0 +1,22 @@
+1- To open the terminal: ALT+F2 Type the command- gnome-terminal
+2-to close the current Terminal- CTRL+D or type EXIT or CTRL+Shift+W
+3-To open a new tab- ctrl+shift+T
+4-To switch a one tab to another tab- ctrl+page down or ctrl+page up 
+5-To increase the font size - Ctrl+
+6-To decrease the font size - Ctrl- 
+7-To open a new terminal - ctrl+shift+n
+8-ctrl + c ==> to quit from any running task
+9-Alt + F4 ==> to close all terminal windows
+Ctrl + a             ==> to move cursor in beginning of the command
+Ctrl + e             ==> to move cursor in end of the command
+Ctrl + <-- [arrow]   ==> to move cursor word by word in back side
+Ctrl + --> [arrow]   ==> to move cursor word by word in forward side
+Ctrl + u             ==> to delete command before the cursor   
+Ctrl + k             ==> to delete command After the cursor 
+
+Ctrl + r     ==> to search and execute any command from the history   
+
+!15          ==> to run 15 number command from the history
+!-4          ==> to run forth number command from the back side
+
+

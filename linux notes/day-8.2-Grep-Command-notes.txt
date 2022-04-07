@@ -1,0 +1,194 @@
+[root@localhost ~]# history 
+    1  history 
+    2  cat  /etc/passwd
+    3  grep   root   /etc/passwd
+    4  grep   games    /etc/passwd
+    5  grep  root  /etc/group  
+    6  grep   --color  root  /etc/passwd 
+    7  grep    root  /etc/passwd 
+    8  grep  root  /etc/passwd
+    9  grep -n    root  /etc/passwd
+   10  grep  -c   root  /etc/passwd  
+   11  grep  root  /etc/passwd
+   12  grep  -o   root  /etc/passwd
+   13  grep  -o   root  /etc/passwd | wc -l 
+   14  grep  -c   -o   root  /etc/passwd 
+   15  grep  root  /etc/passwd
+   16  grep -o   root  /etc/passwd
+   17  grep -o   root  /etc/passwd >  /tmp/string.txt  
+   18  cat  /tmp/string.txt 
+   19  grep  -n root  /etc/passwd 
+   20  grep  -n -o  root  /etc/passwd 
+   21  grep  -no  root  /etc/passwd 
+   22  grep   ROOT   /etc/passwd 
+   23  grep   -i  ROOT   /etc/passwd 
+   24  grep   -i  Root    /etc/passwd 
+   25  grep   dns   /etc/passwd
+   26  grep  -i    dns   /etc/passwd
+   27  grep  -i  dhcp     /etc/passwd
+   28  grep   dhcp     /etc/passwd
+   29  grep  -i  dhcp     /etc/passwd
+   30  grep -n -i -o  root  /etc/passwd 
+   31  grep  workgroup  /etc/samba/smb.conf 
+   32  grep  samba  /etc/samba/smb.conf 
+   33  grep -i    samba  /etc/samba/smb.conf 
+   34  grep  ftp   /etc/passwd
+   35  grep  games   /etc/passwd
+   36  grep  root     /etc/passwd
+   37  grep -n   ftp   /etc/passwd
+   38  grep -A2   -n   ftp   /etc/passwd
+   39  grep -A3   -n   ftp   /etc/passwd
+   40  grep -B2   -n   ftp   /etc/passwd
+   41  grep -B2    ftp   /etc/passwd
+   42  grep -B2  -n    ftp   /etc/passwd
+   43  grep  -C2  -n    ftp   /etc/passwd
+   44  grep -n    root  /etc/passwd
+   45  grep -A2  -n    root  /etc/passwd
+   46  grep  root  /etc/passwd
+   47  grep  root  /etc/passwd | wc -l  
+   48  grep  -c  root  /etc/passwd 
+   49  grep root  /etc/passwd
+   50  grep -v  root  /etc/passwd
+   51  grep -c   root  /etc/passwd
+   52  grep -c  -v     root  /etc/passwd
+   53  grep root  /etc/passwd
+   54  grep root  /etc/passwd   >  /tmp/matched 
+   55  grep -v   root  /etc/passwd   >  /tmp/un-matched 
+   56  cat  /tmp/matched 
+   57  cat  /tmp/un-matched 
+   58  history 
+   59  grep -i5 /etc/passwd
+   60  ls /etc 
+   61  ls /etc |  grep  passwd 
+   62  ls /etc |  grep  passwd  | wc -l  
+   63  grep  -n root  /etc/passwd
+   64  grep  -n -v   root  /etc/passwd
+   65  grep   rsync  /etc/services 
+   66  grep   873  /etc/services 
+   67  grep  -w   rsync  /etc/services 
+   68  grep  -w   873   /etc/services 
+   69  useradd manish
+   70  useradd manisha
+   71  tail -n 2  /etc/passwd
+   72  grep  manish  /etc/passwd 
+   73  grep  -w  -i   manish  /etc/passwd 
+   74  grep  -w  -i   manisha  /etc/passwd 
+   75  grep  root  /etc/passwd
+   76  grep  "root"  /etc/passwd
+   77  grep  'root'  /etc/passwd
+   78  cat  /etc/passwd 
+   79  grep  'RPC Service User'  /etc/passwd 
+   80  grep  "RPC Service User"  /etc/passwd 
+   81  grep  -i   "rpc Service User"  /etc/passwd 
+   82  grep root  /etc/passwd
+   83  grep  ^root  /etc/passwd
+   84  grep  '^root'  /etc/passwd
+   85  grep  '^ftp'  /etc/passwd
+   86  grep  'bash$'  /etc/passwd
+   87  grep  bash  /etc/passwd
+   88  cat  /etc/passwd
+   89  grep   'bash$'  /etc/passwd
+   90  grep   'nologin$'  /etc/passwd
+   91  grep   'bash$'  /etc/passwd | wc -l  
+   92  grep   'nologin$'  /etc/passwd | wc -l 
+   93  grep  ^root  /etc/passwd
+   94  grep root /etc/passwd
+   95  cat /etc/passwd  |  grep root 
+   96  lsblk  
+   97  lsblk   |  grep sda  
+   98  lsblk   |  grep -w  sda  
+   99  lsblk   |  grep boot 
+  100  cat  -n  /etc/passwd
+  101  cat  -n  /etc/passwd | sed  -n  '21,25p'
+  102  cat  -n  /etc/passwd | sed  -n  '21,25p' |  grep  rpc 
+  103  lscpu 
+  104  lscpu  |  grep -i  "model name"
+  105  lscpu  |  grep -i  "Model name"
+  106  lscpu  |  grep  "Model name"
+  107  lscpu |  head -n  3
+  108  lscpu |  head -n  3 |  grep -i little  
+  109  df -h 
+  110  df -h  |  grep boot 
+  111  ls  
+  112  ls  | grep ana
+  113  ls  | grep initial
+  114  ls
+  115  grep root  /etc/passwd
+  116  grep ftp   /etc/passwd
+  117  grep games   /etc/passwd
+  118  grep   root   ftp   games   /etc/passwd 
+  119  grep   "root|ftp|games"   /etc/passwd 
+  120  egrep   "root|ftp|games"   /etc/passwd 
+  121  egrep   -n  -i  "root|ftp|games"   /etc/passwd 
+  122  grep  -E    -n  -i  "root|ftp|games"   /etc/passwd 
+  123  lsblk  
+  124  lsblk   |  grep  -E  'sda1|sda2'
+  125  lsblk   |  egrep    'sda1|sda2'
+  126  df -h
+  127  df -h | grep -E  'sda1|root'
+  128  df -h | egrep 'sda1|root'
+  129  df -h | egrep -n  'sda1|root'
+  130  fgrep   root  /etc/passwd   /etc/group  
+  131  fgrep  -i  -n   root  /etc/passwd   /etc/group  
+  132  grep -F  -i  -n   root  /etc/passwd   /etc/group  
+  133  grep   -i  -n   root  /etc/passwd   /etc/group  
+  134  grep  -F   -i  -n   root  /etc/passwd   /etc/group  
+  135  grep  -F   -i  -n   'root|ftp|gmaes'   /etc/passwd   /etc/group  
+  136  grep  -E   -i  -n   'root|ftp|gmaes'   /etc/passwd   /etc/group  
+  137  lsblk  
+  138  lsblk   |  grep -E  'sda1|sda2'
+  139  df -h | egrep -n  'sda1|root'
+  140  lsblk   |  grep -E  'sda1|sda2'  ;  df -h | egrep -n  'sda1|root'
+  141  lsblk   |  grep -E  'sda1|sda2'  ;  df -h | grep -E -n  'sda1|root'
+  142  lsblk   | egrep   'sda1|sda2'  ;  df -h | egrep -n  'sda1|root'
+  143  lsblk   | egrep   'sda1|sda2'  ;  df -h | egrep  'sda1|root'
+  144  lsblk  | egrep   'sda1|sda2'
+  145  lsblk  | egrep   sda1|sda2
+  146  lsblk  | egrep   'sda1|sda2'
+  147  cat   /etc/default/useradd 
+  148  grep -i skel    /etc/default/useradd 
+  149  grep  -i -n  skel    /etc/default
+  150  grep -R    -i -n  skel    /etc/default
+  151  grep -R    -i -n  skel    /etc/
+  152  grep -R    -i -n  skel    /etc/default/
+  153  grep   -i -n  skel    /etc/default
+  154  grep -R  -i -n  skel    /etc/default
+  155  grep -R  -i -n  skel    /etc
+  156  grep  -i -n  skel    /etc/default
+  157  grep  -i -n  skel    /etc/default/*
+  158  history 
+  159  fdisk -l
+  160  fdisk -l |  grep sda
+  161  fdisk -l |  grep -w  sda
+  162  dmidecode 
+  163  dmidecode   |  grep -i  Physical
+  164  dmidecode   |  grep -i  "Physical memory"
+  165  history 
+  166  lscpu 
+  167  l
+  168  lscpu | sed  -n  '11,15p'
+  169  lscpu | sed  -n  '11,15p' | grep  -i  "model name"
+  170  history 
+  171  grep  manish  /etc/passwd
+  172  grep -w   manish  /etc/passwd
+  173  grep -w   manisha  /etc/passwd
+  174  man  grep 
+  175  grep  --help 
+  176  man   --help 
+  177  man   grep 
+  178  history 
+  179  cat  /etc/fstab 
+  180  grep  ^#   /etc/fstab 
+  181  grep  ^[#]   /etc/fstab 
+  182  grep  ^[^#]   /etc/fstab 
+  183  grep  ^[#]   /etc/fstab 
+  184  grep  #  /etc/fstab 
+  185  grep  '#'  /etc/fstab 
+  186  grep  ^[#]   /etc/fstab 
+  187  grep  ^[^#]   /etc/fstab 
+  188  grep  ^[^#]   /etc/fstab  >  /tmp/un-commented-files
+  189  cat  /tmp/un-commented-files 
+  190  history 
+  191  grep  ^manish  /etc/passwd
+  192  grep -w    ^manish  /etc/passwd
+  193  history 

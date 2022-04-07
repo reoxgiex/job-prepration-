@@ -1,0 +1,134 @@
+    1  ls  
+    2  ls  /
+    3  gedit  abc 
+    4  ls 
+    5  cat abc  
+    6  gedit abc 
+    7  ls
+    8  cat abc  
+    9  mkdir /data  
+   10  gedit  /data/xyz  
+   11  ls /data
+   12  cat  /data/xyz 
+   13  gedit  /data/xyz  
+   14  ls /data
+   15  cat  /data/xyz 
+   16  gedit  /tmp/xyz 
+   17  cat  /tmp/xyz 
+   18  gedit 
+   19  ls 
+   20  ls /data
+   21  cat  /data/vipin 
+   22  ls
+   23  ls -l 
+   24  ls /
+   25  ls -l 
+   26  ls -l  -d   /bin  
+   27  ls -l  -d   /sbin  
+   28  ls /bin 
+   29  ls /usr/bin 
+   30  ls /bin  | wc -l 
+   31  ls /usr/bin  | wc -l 
+   32  ls /sbin  | wc -l 
+   33  ls /usr/sbin  | wc -l 
+   34  ls  /
+   35  ls /usr/bin  | wc -l  
+   36  ls /usr/sbin  | wc -l  
+   37  expr 1475 + 594
+   38  rpm -q  -a 
+   39  rpm -q  -a  | wc -l  
+   40  rpm -qa  | wc -l  
+   41  expr 1475 + 594
+   42  mkdir -p  /kr/network/cloud 
+   43  tree  /kr 
+   44  which  tree 
+   45  which  useradd 
+   46  rpm -qa  tree  
+   47  rpm -qa  trees  
+   48  rpm -qa 
+   49  rpm -qa  | wc -l 
+   50  which  reboot  
+   51  which  restart  
+   52  cat  /etc/redhat-release 
+   53  cat  /etc/system-release
+   54  useradd deep
+   55  adduser deepak
+   56  which useradd
+   57  which adduser  
+   58  ls -l /usr/sbin/adduser
+   59  ls -l /usr/sbin/useradd 
+   60  cat  /etc/redhat-release 
+   61  cat  /etc/system-release
+   62  ls  -l  /etc/system-release
+   63  ls  -l  /etc/redhat-release 
+   64  ls -ld  /etc 
+   65  ls -ld  /etc/passwd 
+   66  ls -l  /etc/passwd 
+   67  ls -ld /
+   68  ls /
+   69  ls -l /
+   70  /
+   71  ls  /
+   72  cd /
+   73  cd /dev
+   74  ls
+   75  ll
+   76  cd
+   77  ls  /
+   78  ls
+   79  ls  -l 
+   80  ll 
+   81  gedit abc 
+   82  which vi 
+   83  which vim  
+   84  which gedit 
+   85  rpm -qf /usr/bin/vi
+   86  rpm -qf /usr/bin/vim
+   87  rpm -qa  vim-enhanced
+   88  rpm -qa  vim-minimal
+   89  which tree  
+   90  rpm -qa tree 
+   91  rpm  -qf /usr/bin/tree 
+   92  which useradd 
+   93  rpm -qf  /usr/sbin/useradd
+   94  history 
+   95  vim  /etc/fstab 
+   96  vi  /etc/fstab 
+   97  vim   /etc/fstab 
+   98  vi   /etc/fstab 
+   99  ls 
+  100  vim  xyz 
+  101  ls
+  102  cat xyz 
+  103  vim  xyz 
+  104  vim  /tmp/rajesh  
+  105  cat   /tmp/rajesh  
+  106  vim  /tmp/rajesh  
+  107  ls /kr
+  108  ls /kr/network
+  109  ls /kr/network/cloud
+  110  vim  /kr/network/cloud/abc  
+  111  cat    /kr/network/cloud/abc  
+  112  cat  /etc/fstab 
+  113  cat /etc/inittab 
+  114  cat  /etc/crontab 
+  115  useradd  rajeev  
+  116  ls  /home 
+  117  cat   /etc/default/useradd 
+  118  vim    /etc/default/useradd 
+  119  cat     /etc/default/useradd 
+  120  vim      /etc/default/useradd 
+  121  cat        /etc/default/useradd 
+  122  cat  /etc/sudoers 
+  123  vim   /etc/sudoers 
+  124  vim /etc/fstab 
+  125  #ls
+  126  ls
+  127  vim  xyz 
+  128  vim  hello 
+  129  vim  /etc/fstab 
+  130  cp  /etc/passwd   .
+  131  ls  
+  132  vim  passwd 
+  133  history 
+  134  history >  /root/day-8-command-notes

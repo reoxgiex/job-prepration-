@@ -1,0 +1,43 @@
+How to create and save any file using vi and vim command ?
+
+
+BASIC Vi + Vim  operation  
+
+
+[ root @ localhost ~ ] #  vim xyz
+
+Press i to insert text into the file.
+
+hello team....
+
+
+Note:- How we can save and quit from the file
+
+ESC  ==> to exit from the insert mode
+:    ==> to run any command
+w    ==>  write ( save )
+q    ==>  quit 
+!    ==>  Forcefully ( interactive ) 
+
+How we can use these operators ..? 
+
+ESC  + Shift
+
+:q     [ quit without save ]
+
+:w     [ save only ] 
+
+:wq    [ save and quit ]   OR   ESC + Shift  + ZZ    OR     :x 
+
+:q!    [ quit forcefully ]
+
+:wq!   [ save and quit forcefully ] 
+
+
+
+
+
+
+
+
+

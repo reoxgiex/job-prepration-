@@ -1,0 +1,418 @@
+===============================================
+
+   FIND and Locate Commands
+
+===============================================
+
+both commands are use to find out the location 
+of any files and directory into any place.
+
+===============================================
+# locate  <options>   <name>
+# find   <place>    <options>    <name or argument >
+
+-name
+-iname
+-inum
+-size
+-type
+-empty
+-perm
+-user
+-group
+-exec
+-atime
+-amin
+-ctime
+-cmin
+-mtime
+-mmin
+..........so on
+
+======================================
+
+# find  --help  
+# man  find
+
+=====================================
+    9  find  /  -name useradd   
+   10  find  /etc   -name useradd   
+   11  find  /usr    -name useradd   
+   12  which locate
+   13  rpm -q   -f  /usr/bin/locate
+   14  locate   useradd 
+   15  updatedb  
+   16  locate   useradd 
+   17  locate  -n 5   useradd 
+   18  locate  USERADD 
+   19  locate  -i  USERADD 
+   20  locate passwd  
+   21  locate  passenger  
+   22  locate  selinux
+   23  touch rajeev  
+   24  locate rajeev 
+   25  locate crontab 
+   26  locate  -S
+   27  ls /
+   28  updatedb 
+   29  locate rajeev 
+   30  locate  -S
+   31  touch  /ibm  
+   32  locate  -S
+   33  locate ibm  
+   34  updatedb 
+   35  locate  -S
+   36  locate ibm  
+   37  locate ibm  -n 5
+   38  find  /   -name   rajeev  
+   39  find  /   -name   ibm  
+   40  locate  ibm 
+   41  locate  useradd 
+   42  find  /  -name useradd
+   43  find  /  -name  *useradd*
+   44  touch manish
+   45  locate  manish 
+   46  find  /  -name manish  
+   47  updatedb 
+   48  locate  manish 
+   49  ls  /etc  
+   50  l
+   51  du -sh /etc/crontab 
+   52  find  /  -name rajeev
+   53  find  -name rajeev
+   54  which locate
+   55  which find  
+   56  rpm -qf  /usr/bin/locate
+   57  rpm -qf  /usr/bin/find
+   58  which crontab  
+   59  rpm -qf  /usr/bin/crontab
+   60  touch  /abc
+   61  find  /   -name abc 
+   62  touch abc  
+   63  find  /   -name abc 
+   64  ls  -i  /abc
+   65  find  /   -inum  603122
+
+=====================================
+FIND examples
+=====================================
+
+    1  find  /  -name  useradd  
+    2  find  /  -name  userdel  
+    3  find  /  -name  usermod  
+    4  find  /  -name crontab  
+    5  cat /etc/crontab
+    6  find  /etc  -name  useradd 
+    7  find  /usr   -name  useradd 
+    8  find  /  -name    user*
+    9  find  /  -name    useradd*
+   10  find  /  -name    useradd
+   11  find  /  -name    useradd*
+   12  find  /  -name    *useradd*
+   13  find  /etc  -name   smb.conf  
+   14  find  /  -name   smb.conf  
+   15  find  /  -name   smb*
+   16  find  /  -name  passwd 
+   17  find  /etc   -name  passwd 
+   18  find  /usr   -name  passwd 
+   19  find  /etc  -name useradd 
+   20  find  /etc  -name USERADD  
+   21  find  /etc  -iname USERADD  
+   22  find  /etc  -iname USERadd 
+   23  ls  
+   24  find  /root  -name  *.cfg 
+   25  find  /root  -name  "*.cfg" 
+   26  find  /etc  -name   "*.py"
+   27  find  /usr  -name   "*.py"
+   28  find  /usr  -name   *.py
+   29  find  /usr  -name   "*.py"
+   30  ls /etc  
+   31  find  /etc  -name  "*.conf"
+   32  find  /etc  -name  "*.conf"  >  /conf  
+   33  cat  /conf 
+   34  cat  /conf  |  grep yum
+   35  ls  /etc 
+   36  find  /etc  -name  ".*"
+   37  find  /etc  -name  "*.conf"
+   38  find  /etc  -name  "y*.conf"
+   39  find  /etc  -name  "c*.conf"
+   40  find  /etc  -name  "c*.conf" | wc -l  
+   41  find  /etc  -name  "y*.conf" | wc -l  
+   42  touch  raju 
+   43  find  /    -name  raju 
+   44  find    -name  raju 
+   45  find  /root   -name  raju 
+   46  find  .   -name  raju 
+   47  ls -i raju  
+   48  find /  -name  raju 
+   49  find  /  -inum  35327535
+   50  mkdir  /data  
+   51  touch /data/abc{1..5}
+   52  mkdir  /data/d{1..3}
+   53  ls /data
+   54  ls -F  /data
+   55  find  /data  -type  f  
+   56  find  /data  -type  d
+   57  find  /data  -type  l
+   58  ls /etc 
+   59  find  /etc  -type  f  
+   60  find  /etc  -type  d 
+   61  find  /etc  -type  l 
+   62  find  /etc  -type  f   | wc -l 
+   63  find  /etc  -type  d   | wc -l 
+   64  find  /etc  -type  l   | wc -l 
+   65  cat  /etc/redhat-release 
+   66  cat  /etc/system-release
+   67  ls  -l  /etc/redhat-release
+   68  ls  -l  /etc/system-release
+   69  find  /etc  -type f  | grep redhat
+   70  find  /etc  -type l  | grep system
+   71  ls /data
+   72  cat  /data/abc1
+   73  cat  /data/abc2
+   74  cat  /data/abc3
+   75  find  /data  -empty
+   76  find  /data  -empty  -type f 
+   77  find  /data  -empty  -type d
+   78  echo  "hello"  >  /data/abc1
+   79  cat /data/abc1
+   80  find  /data  -type f 
+   81  find  /data  -type f  -empty
+   82  find  /data  -type f  ! -empty
+   83  find  /data  -type f   -empty
+   84  find  /data  -type f  
+   85  find  /data  -type f   -empty | wc -l 
+   86  find  /data  -type f  !  -empty | wc -l 
+   87  find  /data -type  d
+   88  find  /data -type  f
+   89  find  /data -type f
+   90  ls -l  /data/abc1
+   91  ls -l  /data/abc2
+   92  ls -l  /data/abc3
+   93  du -sh  /data/abc1
+   94  find  /data -type f
+   95  find  /data -type f  -exec  ls -l  {}  \;
+   96  find  /data -type f
+   97  find  /data -type f  -exec du -sh  {}  \;
+   98  mkdir  /linux  
+   99  ls /data
+  100  find /data -type f
+  101  find /data -type f -exec  cp -rf  {}   /linux  
+  102  find /data -type f -exec  cp -rf  {}   /linux  \;
+  103  ls /linux
+  104  find /data -type f 
+  105  find  /etc  -type f  -exec ls -l  {}  \;
+  106  find  /etc  -type f  -exec du -sh    {}  \;
+  107  find  /etc  -size  +5M  
+  108  du -sh  /etc/selinux/targeted/policy/policy.31
+  109  find  /etc  -size  +5M   -exec  du -sh  {}  \;
+  110  find  /data -type f
+  111  find /data -type f 
+  112  find /data -type f  -exec du -sh  {} \;
+  113  find /data -type  f -exec cp -rf  {}   /linux \;
+  114  find /data  -type f  
+  115  find /data  -type f   > /abc  
+  116  cat  /abc  
+  117  find  /etc  -size  +5M 
+  118  find  /etc  -size  -5M 
+  119  find  /etc  -size  +5M  -type f  
+  120  find  /etc  -size +5M  -size  -10M 
+  121  find  /etc  -size +5M  -size  -10M  -exec du -sh  {} \;
+  122  find  /data  -type f 
+  123  find  /data  -type ! f 
+  124  find  /data ! -type f 
+  125  find  /data ! -type d
+  126  find /etc  -perm  000
+  127  ls -l  /etc/shadow
+  128  cat  /etc/shadow
+  129  ls -l  /etc/shadow
+  130  useradd  harry  
+  131  su - harry  
+  132  mkdir  /redhatdata  
+  133  find  /  -user  harry 
+  134  find  /  -group   harry 
+  135  find  /  -user  harry 
+  136  find  /  -user  harry  2>  /dev/null  
+  137  find  /  -user  harry  -exec ls -l  {}  \;
+  138  ls /redhatdata
+  139  find  /  -user  harry  2>  /dev/null 
+  140  find  /  -user  harry  -exec cp -rf  {}   /redhatdata   \;
+  141  ls  /redhatdata
+  142  history 
+  143  find  /  -user  harry  2>/dev/null -exec cp -rf  {}   /redhatdata   \;
+  144  ls  /redhatdata
+  145  find  /  -user  harry
+  146  find  /  -user  harry -exec ls -l  {}  \;
+  147  find  /  -user  harry 2>/dev/null  -exec ls -l  {}  \;
+  148  touch  /tmp/manisha.txt  
+  149  find /  -name   "*.txt"
+
+================================================
+
+
+
+===================================
+locate command examples:-
+===================================
+    2  find  /   -name  passwd  
+    3  find  /etc    -name  passwd  
+    4  find  /usr     -name  passwd  
+    5  find  /etc    -name     useradd 
+    6  ls  /
+    7  find  /etc    -name     useradd 
+    8  which locate 
+    9  which find  
+   10  rpm -q   -f  /usr/bin/locate
+   11  rpm -q   -f  /usr/bin/find  
+   12  locate useradd
+   13  find /   -name  useradd  
+   14  updatedb 
+   15  locate useradd
+   16  find  /  -name useradd
+   17  locate useradd
+   18  locate useradd | head  -n 5
+   19  locate -n 2 useradd 
+   20  locate  yum.conf  
+   21  locate YUM.conf
+   22  locate -i YUM.conf
+   23  locate USERADD
+   24  locate -i  USERADD
+   25  touch tajmahal 
+   26  ls  /
+   27  locate  tajmahal
+   28  find  /   -name tajmahal
+   29  locate yum.conf 
+   30  locate useradd
+   31  locate  tajmahal
+   32  locate -S
+   33  updatedb 
+   34  locate -S
+   35  locate  tajmahal
+   36  touch   raju  
+   37  locate -S
+   38  locate raju  
+   39  find /  -name raju 
+   40  locate raju  
+   41  updatedb 
+   42  locate raju  
+   43  locate -S
+   44  ls /etc
+   45  ls /etc/skel
+   46  locate  skel  
+   47  locate -S
+   41  updatedb 
+   42  locate raju  
+   43  locate -S
+   44  ls /etc
+   45  ls /etc/skel
+   46  locate  skel  
+   47  locate -S
+   48  history 
+   49  touch  punit  
+   50  locate -S
+   51  locate  punit 
+   52  reboot   
+   53  locate  punit 
+   54  locate -S
+   55  updatedb 
+   56  locate -S
+   57  locate  punit 
+   58  touch rakesh  
+   59  find  /   -name rakesh  
+   60  find  /etc     -name rakesh  
+   61  find  /  -name  useradd
+   62  find  /  -name  *useradd*
+   63  locate  useradd
+   64  find  /  -name  *useradd*
+   65  find  /  -name  *useradd
+   66  find  /  -name  useradd*
+   67  find  /  -name  *useradd*
+   68  find  /  -name  useradd*  | wc -l  
+   69  find  /  -name  *useradd*  | wc -l  
+   70  find /  -name luseradd  
+   71  find /  -name luseradd*  
+   72  locate  useradd
+   73  locate USERADD
+   74  locate -i   USERADD
+   75  find  /   -name   useradd  
+   76  find  /   -name   USERADD  
+   77  find  /   -iname   USERADD  
+   78  find  -name  punit  
+   79  ls
+   80  find  -name  useradd  
+   81  find  /etc   -name  useradd  
+   82  ls  /
+   83  find  /   -empty
+   84  find  /   -empty | wc -l
+   85  mkdir  /data  
+   86  cd /data
+   87  touch abc1 abc2 abc3
+   88  ls
+   89  echo  hello  > abc1
+   90  cat abc1
+   91  cat abc2
+   92  cat abc3
+   93  cd
+   94  find  /data  -empty
+   95  find  /data  ! -empty
+
+==========================================
+
+
+
+
+
+FIND    ==> find command is also use to find out location of any file and directory.
+            Basical in find command we have lot of options to find out any data location with respective
+            our requirements.
+
+
+
+====================================================================
+
+#  find   location    options   <file-name OR directoryname OR argument>
+
+Options:-
+
+-name
+-iname
+-inum
+-size
+-perm
+-type
+-empty
+-exec
+-user
+-group
+-atime
+-amin
+-ctime
+-cmin
+-mtime
+-mmin
+.....so on 
+
+================================================ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+==================================
+   Day-5  Linux Basic Commands
+==================================
+Machine  <=== Operating System <== RHEL-8
+==================================
+Types of users
+
+1- Super user   ==> root           ==> #
+2- Normal user  ==> deepak sachin  ==> $
+
+=================================
+File     <===> File 
+Folder   <===> Directory
+=================================
+touch    ==> blank file
+mkdir    ==> create directory
+=================================
+Linux  ==> data store  <===  /   <=== default data + Custom data 
+=================================
+Task-1  How we can read content of any file using cat command ?
+
+# cat  <options>   <location of the file>
+# tac  <filename>
+	
+=================================
+
+
+Task-2  How we can print any mesg on the screen using echo command  ?
+
+
+=================================
+
+Task-3  what is the use of wc command  ?
+
+word count  ==>  it is use to count number of lines
+                                    number of words
+                                and number of characters from any file
+
+=================================
+
+Task-4  Symbols 
+
+1-       >    ==> to store output of any command into any file.
+
+ 
+2-      >>    ==> use to append output of any command into any existing file.
+
+================================
+
+3-      ;
+
+
+4-      Pipe Symbol   |
+
+===============================
+Choice-1
+
+1- Direct Command 
+2- Command with single options
+3- Command with multiple options 
+4- command with Single pipe Symbols
+5- command with double pipe symbols
+
+================================
+
+
+ >    OR    tee
+
+ >>   OR    tee  -a 
+
+=================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+

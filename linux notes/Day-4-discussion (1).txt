@@ -1,0 +1,187 @@
+==================================================
+
+       Day-4     Data Creation Planning 
+
+==================================================
+machine   <=== RHEL-8  <=== Login  <=== Activity
+==================================================
+Machine  <=== OS installation  <=== About Data planning ?
+
+1- Default Data 
+2- Custom  Data 
+
+===================================================
+
+1- Default Data  
+
+    1-  During the OS installation 
+    2-  After the OS installation ==> if you are going to install any other application/Tools/Softwares
+
+2- Custom  Data ==> After the OS installation  ==> Created by any users
+
+==================================================
+
+Machine  <=== DISK  <=== partition  <=== Data Store 
+
+IN Windows    ==>  C:\ [ OS operate files ]           D:\   [ personal Data ]     E:\    [ Personal Data ]
+
+==================================================
+In Linux   ==> There is no concept of  C:\  D:\  E:\
+==================================================
+File       <===>  File
+Folder     <===>  Directory
+==================================================
+
+In Linux Operating System ==> Data Creation  ==> Default Data + Custom Data
+
+Will Exit over     /    directory .
+
+=================================================
+/  ==> Parent Directory OR Parent Partition OR  ROOT partition OR top level directory
+=================================================
+
+/  ==> default data     ==> around 19  sub directory ==> #  ls  /      ==> 19 
+   ==> custom  data     ==> # mkdir  /movie          ==> #  ls  /      ==> 20
+                            # mkdir  /storage        ==> #  ls  /      ==> 21
+                            # mkdir  /storage/data   ==> #  ls  /      ==> 21
+                            # ls     /storage
+                                  OR
+                            # cd  /storage
+                            # ls 
+
+=================================================
+
+# ls  /
+
+=================================================
+Linux ==> login ==> command  ==> location 
+=================================================
+~ ] # ls 
+
+~ ] # ls  /
+
+~ ] # ls  /home 
+
+~ ] # clear 
+
+~ ] # useradd rajeev 
+
+~ ] # mkdir  data 
+================================================
+
+root      OR   ~ ===>  private place  [ read write execute ]  + public Place  [ Full access ]
+ 
+deepak    OR   ~ ===>  private place  [ read write execute ]  + public place [ by default read only ] but these
+ permissions can be customised in furture as per demands
+
+===============================================
+
+Except of user's home directory data  ==> all data will count in public place or public data 
+
+===============================================
+
+/  ==> 19 Directory    ===>   17    ==> Main Directory ==> OS operating directory
+                       ===>    2    ==> reserved for user's home account
+                                    ==>  /root   ==> super user home account
+                                    ==>  /home   ==> normal user's account
+
+
+==============================================
+
+~ ] # pwd
+
+/root
+
+~ ] $ pwd 
+
+/home/deepak
+
+~ ] $ ls  /       ===> yes 
+  ] $ ls  /root   ===> no
+  ] $ ls  /home/rahul ==> no
+  ] $ ls
+  ] $ ls  /home/deepak ==>  yes 
+================================================
+
+~ ] # ls  /
+
+~ ] # ls 
+
+      OR
+
+~ ] # ls  /root 
+~ ] # ls  ~
+~ ] # ls /home 
+
+===============================================
+
+
+# mkdir /movie
+===============================================
+
+How we can create files and directory ?
+
+ls  ==> to check the data listing
+cd  ==> go into any directory
+touch ==> to create blank file
+mkdir ==> to create directory 
+mkdir  -p   ==> to created nested directory
+cd  ..  ==> one level back
+cd ../.. ==> two level back
+cd -     ==> go on last working directory
+cd  .    ==> current working directory
+cd  ~    ==> home directory
+cd  /    ==> root directory or parent directory
+tree     ==> check data listing 
+ls -R    ==>  "  "  " "  "  "  "
+
+===============================================
+Types of Path ?
+
+1- Relative path 
+2- Absolute Path 
+
+=============================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
